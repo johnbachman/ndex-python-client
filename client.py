@@ -5,12 +5,109 @@ import pandas as pd
 import networkx as nx
 import json
 
-class PropertyGraph:
-    def __init__(self, network):
-        #print network
-        self.nodes = pd.DataFrame(network['nodes'].values())
-        self.edges = pd.DataFrame(network['edges'].values())
-        self.properties = pd.DataFrame(network['properties'])
+# Convert NDEx property graph json to networkx network
+def ndexToNetworkX(ndexPropertyGraphNetwork):
+        g = nx.MultiDiGraph()
+        for node in ndexPropertyGraphNetwork['nodes'].values():
+            g.add_node(node['id'])
+        for edge in ndexPropertyGraphNetwork['edges'].values():
+            g.add_edge(edge['subjectId'], edge['objectId'])
+        return g
+        
+# Utility to strip UUID from property graph before writing, ensure that we create new network
+def removeUUIDFromNetwork(ndexPropertyGraphNetwork):   
+    counter = 0
+    for pv in ndexPropertyGraphNetwork.properties:
+        if pv.predicateString == "UUID":
+            del ndexPropertyGraphNetwork.properties[counter]
+            return None
+        else:
+            counter = counter + 1
+   
+        
+#for (NdexPropertyValuePair property : ndexProperties) {
+        
+#           if (cyTable.getColumn(property.getPredicateString()) == null) {
+#               Class type = String.class;
+#               Class listElementType = null;
+#               try {
+#                   String ndexDataType = property.getDataType();
+#                   if (ndexDataType.startsWith("List")) {
+#                       type = List.class;
+#                       String elementTypeString = ndexDataType.substring(ndexDataType.indexOf(".") + 1);
+#                       listElementType = Class.forName("java.lang." + elementTypeString);
+#                   } else {
+#                       type = Class.forName("java.lang." + ndexDataType);
+#                   }
+#               } catch (ClassNotFoundException ex) {
+#                   Logger.getLogger(DownloadNetworkDialog.class.getName()).log(Level.SEVERE, null, ex);
+#               }
+#               if (type == List.class) {
+#                   cyTable.createListColumn(property.getPredicateString(), listElementType, false);
+#               } else {
+#                   cyTable.createColumn(property.getPredicateString(), type, false);
+#               }
+#           }
+#           CyRow cyRow = cyNetwork.getRow(rowId);
+#           setData(property, cyRow);
+#           // This is a temporary hack, need to check the mapping of node names / labels...
+#           if (property.getPredicateString().equalsIgnoreCase("DC:Title")) {
+#               cyRow.set("name", property.getValue());
+#           }
+#           else if (property.getPredicateString().equalsIgnoreCase("NDEx:represents")){
+#               cyRow.set("name", property.getValue());
+#           }   
+
+# Each ndex property becomes a dict property
+def addNdexPropertiesToDict(properties, target):
+     for pv in properties:
+         predicate = pv['predicateString']  
+         #dataType = pv['dataType']
+         value = pv['value']
+         # next, convert values based on datatype...
+         target[predicate] = value
+  
+class PDGraph:
+    def __init__(self, ndexPropertyGraphNetwork):
+        # assemble a dictionary of nodes and then create the dataframe 
+        node_rows = []
+        node_indexes = []
+        for index, node in ndexPropertyGraphNetwork['nodes'].iteritems():
+            node_dict = {}
+            # PropertyGraphNodes just have properties
+            addNdexPropertiesToDict(node['properties'], node_dict)
+            node_rows.append(node_dict)
+            node_indexes.append(index)
+            
+        self.nodes = pd.DataFrame(node_rows, node_indexes)
+        
+        # assemble an array of dictionaries of edges where the edge id is the key
+        # and the dictionary properties are the edge properties, the predicate, and the 
+        # ids for subject and object.
+        # then create the dataframe
+        edge_rows = []
+        edge_indexes = []
+        for index, edge in ndexPropertyGraphNetwork['edges'].iteritems():
+            edge_dict = {}
+            # PropertyGraphEdges have special fields describing the 
+            # edge itself, in addition to properties of the edge
+            edge_dict['ndex:subjectId'] = edge['subjectId']
+            edge_dict['ndex:predicate'] = edge['predicate']
+            edge_dict['ndex:objectId'] = edge['objectId']
+            addNdexPropertiesToDict(edge['properties'], edge_dict)
+            edge_rows.append(edge_dict)
+            edge_indexes.append(index)
+            
+        self.edges = pd.DataFrame(edge_rows, edge_indexes)
+        
+        # assemble a dictionary of the network properties
+        property_dict = {}
+        addNdexPropertiesToDict(ndexPropertyGraphNetwork['properties'], property_dict)
+        self.properties = pd.Series(property_dict)
+        
+
+        
+        ## TBD convert a PDGraph into an NDEx PropertyGraphNetwork dict structure
 
 class Ndex:
         
@@ -73,47 +170,19 @@ class Ndex:
         
 # Network methods
         
-# Utility to strip UUID from property graph before writing, ensure that we create new network
-    def removeUUIDFromNetwork(propertyGraphNetwork):   
-        counter = 0
-        for property in propertyGraphNetwork.properties:
-            if property.predicateString == "UUID":
-                del propertyGraphNetwork.properties[counter]
-                return None
-            else:
-                counter = counter + 1
-                
-# Return network depending on asType parameter
-    def networkAsType(self, network, asType):
-        if asType == "PropertyGraph":
-            return PropertyGraph(network)
-        elif asType == "networkx":
-            return self.ndexToNetworkX(network)
-        else:
-            return network
-            
-# Convert NDEx property graph json to networkx network
-    def ndexToNetworkX(self, network):
-        g = nx.MultiDiGraph()
-        for node in network['nodes'].values():
-            g.add_node(node['id'])
-        for edge in network['edges'].values():
-            g.add_edge(edge['subjectId'], edge['objectId'])
-        return g
-        
+
 # Search for networks by keywords
 #    network    POST    /network/search/{skipBlocks}/{blockSize}    SimpleNetworkQuery    NetworkSummary[]
-    def findNetworks(self, searchString="", accountName=None, skipBlocks=0, blockSize=100, asType="DataFrame"): 
+    def findNetworks(self, searchString="", accountName=None, skipBlocks=0, blockSize=100): 
         route = "/network/search/%s/%s" % (skipBlocks, blockSize)
         postData = {"searchString" : searchString}
         if accountName:
             postData["accountName"] = accountName
         postJson = json.dumps(postData)
-        decodedJson = self.post(route, postJson)
-        if asType == "DataFrame":
-            return pd.DataFrame(decodedJson)
-        else:
-            return decodedJson
+        return self.post(route, postJson)
+        
+    def findNetworksAsDataFrame(self, searchString="", accountName=None, skipBlocks=0, blockSize=100): 
+        return pd.DataFrame(self.findNetworks(searchString, accountName, skipBlocks, blockSize))
 
     def getNetworkApi(self, asType="DataFrame"):
         route = "/network/api"
@@ -126,16 +195,14 @@ class Ndex:
 # Network PropertyGraph methods
         
 #    network    POST    /network/{networkUUID}/edge/asPropertyGraph/{skipBlocks}/{blockSize}        PropertyGraphNetwork
-    def getPropertyGraphNetworkByEdges(self, networkId, skipBlocks=0, blockSize=100, asType = "PropertyGraph"):
+    def getPropertyGraphNetworkByEdges(self, networkId, skipBlocks=0, blockSize=100):
         route = "/network/%s/edge/asPropertyGraph/%s/%s" % (networkId, skipBlocks, blockSize)
-        network = self.get(route)
-        return self.networkAsType(network, asType)
+        return self.get(route)
 
 #    network    GET    /network/{networkUUID}/asPropertyGraph        PropertyGraphNetwork
     def getPropertyGraphNetwork(self, networkId, asType = "PropertyGraph"):
         route = "/network/%s/asPropertyGraph" % (networkId)
-        network = self.get(route)
-        return self.networkAsType(network, asType)
+        return self.get(route)
 
 #    network    POST    /network/asPropertyGraph    PropertyGraphNetwork    NetworkSummary
     def saveNewPropertyGraphNetwork(self, propertyGraphNetwork):
@@ -151,13 +218,12 @@ class Ndex:
        
 ##  Neighborhood PathQuery
 #    network    POST    /network/{networkUUID}/asPropertyGraph/query    SimplePathQuery    PropertyGraphNetwork    
-    def getNeighborhoodAsPropertyGraph(self, networkId, searchString, searchDepth=1, asType = "PropertyGraph"):
+    def getNeighborhoodAsPropertyGraph(self, networkId, searchString, searchDepth=1):
         route = "/network/%s/asPropertyGraph/query" % (networkId) 
         postData = {'searchString': searchString,
                    'searchDepth': searchDepth}
         postJson = json.dumps(postData)
-        network = self.post(route, postJson)
-        return self.networkAsType(network, asType)
+        return self.post(route, postJson)
 
         
 # User methods
