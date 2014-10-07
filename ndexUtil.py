@@ -4,17 +4,30 @@ Created on Sun Oct  5 11:10:59 2014
 
 @author: Dexter Pratt
 """
+import sys
+import networkx as nx
 
+# Convert NDEx property graph json to a trivial networkx network
+def ndexPropertyGraphNetworkToNetworkX(ndexPropertyGraphNetwork):
+        g = nx.MultiDiGraph()
+        for node in ndexPropertyGraphNetwork['nodes'].values():
+            g.add_node(node['id'])
+        for edge in ndexPropertyGraphNetwork['edges'].values():
+            g.add_edge(edge['subjectId'], edge['objectId'])
+        return g
+
+# This is specific to summarizing a BEL network. 
+# Need to generalize
 def stripPrefixes(input):
     st = input.lower()
-    if st.startsWith('bel:'):
+    if st.startswith('bel:'):
         return input[4:input.len()]
-    elif st.startsWith('hgnc:'):
+    elif st.startswith('hgnc:'):
          return input[5:input.len()]
     else:
          return input
 
-
+# This is BEL specific, since BEL is the only current user of funciton terms
 def getFunctionAbbreviation(input):
     st = input.lower()
     fl = stripPrefixes(st)
@@ -49,7 +62,7 @@ def getFunctionAbbreviation(input):
     else:
         return fl
 
-class NetworkSummary:
+class NetworkWrapper:
     def __init__(self, ndexNetwork):
         self.network = ndexNetwork
         self.supportToEdgeMap = {}
@@ -58,7 +71,7 @@ class NetworkSummary:
         self.termLabelMap = {}
 
         for nodeId, node in ndexNetwork['nodes'].iteritems():
-            self.nodeLabelMap[nodeId] = self.getNodeLabel(node)
+            self.nodeLabelMap[int(nodeId)] = self.getNodeLabel(node)
 
         for edge in ndexNetwork['edges'].values():
             for supportId in edge['supports']:
@@ -82,12 +95,17 @@ class NetworkSummary:
             self.citationToSupportMap[citationId] = supportIdList
 
     def getEdgeLabel(self, edge):
-
-        subjectLabel = self.nodeLabelMap[edge['subjectId']]
-        objectLabel = self.nodeLabelMap[edge['objectId']]
-        baseTerms = self.network['baseTerms']
-        predicateTerm = baseTerms[str(edge['predicateId'])]
-        predicateLabel = stripPrefixes(self.getTermLabel(predicateTerm))
+        subjectLabel = "missing"
+        objectLabel = "missing"
+        predicateLabel = "missing"
+        subjectId = edge['subjectId']
+        objectId = edge['objectId']
+        if subjectId in self.nodeLabelMap:
+            subjectLabel = self.nodeLabelMap[subjectId]
+        if objectId in self.nodeLabelMap:
+            objectLabel = self.nodeLabelMap[objectId]
+        predicateId = edge['predicateId']
+        predicateLabel = stripPrefixes(self.getTermLabel(predicateId))
         label = "%s %s %s" % (subjectLabel, predicateLabel, objectLabel)
         return label
 
@@ -149,8 +167,9 @@ class NetworkSummary:
 
             elif type == "reifiededgeterm":
                 edgeId = term['edgeId']
-                reifiedEdge = self.network['edges'][edgeId]
-                if reifiedEdge:
+                edges = self.network['edges']
+                if edgeId in edges:
+                    reifiedEdge = edges[edgeId]
                     label = "(%s)" % (self.getEdgeLabel(reifiedEdge))
                 else:
                     label = "(reifiedEdge: %s)" % (edgeId)
@@ -161,30 +180,35 @@ class NetworkSummary:
             self.termLabelMap[termId] = label
             return label
 
-    def writeSummary(self, fileName):
-        file = open(fileName, 'w')
+    def writeSummary(self, fileName = None):
+        if fileName:
+            output = open(fileName, 'w')
+        else:
+            output = sys.stdout
+            
         for citationId, supportIdList in self.citationToSupportMap.iteritems():
             citations = self.network['citations']
             citation = citations[str(citationId)]
             citationId = citation['identifier']
             # Write Citation
-            file.write("\n=========================================================================\n")
-            file.write("        Citation: %s\n" % (citationId))
-            file.write("=========================================================================\n\n")
+            output.write("\n=========================================================================\n")
+            output.write("        Citation: %s\n" % (citationId))
+            output.write("=========================================================================\n\n")
 
             for supportId in supportIdList:
                 support = self.network['supports'][str(supportId)]
                 # Write Support
-                file.write("_______________________________\n")
-                file.write("Evidence: %s\n\n" % support['text'])
+                output.write("_______________________________\n")
+                output.write("Evidence: %s\n\n" % support['text'])
 
                 edgeList = self.supportToEdgeMap[supportId]
                 for edge in edgeList:
                     # Write Edge
-                    file.write("       %s\n" % self.getEdgeLabel(edge))
+                    output.write("       %s\n" % self.getEdgeLabel(edge))
                     for pv in edge['properties']:
-                        file.write("                %s: %s\n" % (pv['predicateString'], pv['value']))
+                        output.write("                %s: %s\n" % (pv['predicateString'], pv['value']))
 
-        file.close()
+        if fileName:
+            output.close()
 
 

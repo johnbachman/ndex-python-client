@@ -2,17 +2,9 @@
 
 import requests
 import pandas as pd
-import networkx as nx
 import json
 
-# Convert NDEx property graph json to networkx network
-def ndexToNetworkX(ndexPropertyGraphNetwork):
-        g = nx.MultiDiGraph()
-        for node in ndexPropertyGraphNetwork['nodes'].values():
-            g.add_node(node['id'])
-        for edge in ndexPropertyGraphNetwork['edges'].values():
-            g.add_edge(edge['subjectId'], edge['objectId'])
-        return g
+
         
 # Utility to strip UUID from property graph before writing, ensure that we create new network
 def removeUUIDFromNetwork(ndexPropertyGraphNetwork):   
@@ -24,40 +16,6 @@ def removeUUIDFromNetwork(ndexPropertyGraphNetwork):
         else:
             counter = counter + 1
    
-        
-#for (NdexPropertyValuePair property : ndexProperties) {
-        
-#           if (cyTable.getColumn(property.getPredicateString()) == null) {
-#               Class type = String.class;
-#               Class listElementType = null;
-#               try {
-#                   String ndexDataType = property.getDataType();
-#                   if (ndexDataType.startsWith("List")) {
-#                       type = List.class;
-#                       String elementTypeString = ndexDataType.substring(ndexDataType.indexOf(".") + 1);
-#                       listElementType = Class.forName("java.lang." + elementTypeString);
-#                   } else {
-#                       type = Class.forName("java.lang." + ndexDataType);
-#                   }
-#               } catch (ClassNotFoundException ex) {
-#                   Logger.getLogger(DownloadNetworkDialog.class.getName()).log(Level.SEVERE, null, ex);
-#               }
-#               if (type == List.class) {
-#                   cyTable.createListColumn(property.getPredicateString(), listElementType, false);
-#               } else {
-#                   cyTable.createColumn(property.getPredicateString(), type, false);
-#               }
-#           }
-#           CyRow cyRow = cyNetwork.getRow(rowId);
-#           setData(property, cyRow);
-#           // This is a temporary hack, need to check the mapping of node names / labels...
-#           if (property.getPredicateString().equalsIgnoreCase("DC:Title")) {
-#               cyRow.set("name", property.getValue());
-#           }
-#           else if (property.getPredicateString().equalsIgnoreCase("NDEx:represents")){
-#               cyRow.set("name", property.getValue());
-#           }   
-
 # Each ndex property becomes a dict property
 def addNdexPropertiesToDict(properties, target):
      for pv in properties:
@@ -105,9 +63,7 @@ class PDGraph:
         addNdexPropertiesToDict(ndexPropertyGraphNetwork['properties'], property_dict)
         self.properties = pd.Series(property_dict)
         
-
-        
-        ## TBD convert a PDGraph into an NDEx PropertyGraphNetwork dict structure
+        ## TBD export a PDGraph to an NDEx PropertyGraphNetwork dict structure
 
 class Ndex:
         
@@ -141,11 +97,6 @@ class Ndex:
         print "POST route: " + url
         print postJson
         
-#                con.setRequestProperty("charset", "utf-8");
-#        con.setRequestProperty("Content-Length",
-#                "" + Integer.toString(postDataString.getBytes().length));
-#        con.setUseCaches(false);
-# ;charset=UTF-8
         headers = {'Content-Type': 'application/json',
                    'Accept': 'application/json',
                    'Cache-Control': 'no-cache',
