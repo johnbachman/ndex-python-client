@@ -191,8 +191,43 @@ class Ndex:
             return pd.DataFrame(decodedJson)
         else:
             return decodedJson
+ 
+#    network    POST    /network/{networkUUID}/edge/asNetwork/{skipBlocks}/{blockSize}        Network
+    def getNetworkByEdges(self, networkId, skipBlocks=0, blockSize=100):
+        route = "/network/%s/edge/asNetwork/%s/%s" % (networkId, skipBlocks, blockSize)
+        return self.get(route)
+
+#    network    GET    /network/{networkUUID}/asNetwork       Network
+    def getCompleteNetwork(self, networkId):
+        route = "/network/%s/asNetwork" % (networkId)
+        return self.get(route)
+
+#    network    GET    /network/{networkUUID}       NetworkSummary
+    def getNetworkSummary(self, networkId):
+        route = "/network/%s" % (networkId)
+        return self.get(route)
         
-# Network PropertyGraph methods
+#    network    POST    /network    Network    NetworkSummary
+    def saveNewNetwork(self, Network):
+        route = "/network/asNetwork"
+        return self.post(route, Network)
+
+#    network    POST    /network/asNetwork/group/{group UUID}    Network    NetworkSummary
+    def saveNewNetworkForGroup(self, Network, groupId):
+        route = "/network/asNetwork/group/%s" % (groupId)
+        self.removeUUIDFromNetwork(Network)
+        return self.post(route, Network)
+       
+##  Neighborhood PathQuery
+#    network    POST    /network/{networkUUID}/asPropertyGraph/query    SimplePathQuery    PropertyGraphNetwork    
+    def getNeighborhood(self, networkId, searchString, searchDepth=1):
+        route = "/network/%s/asNetwork/query" % (networkId) 
+        postData = {'searchString': searchString,
+                   'searchDepth': searchDepth}
+        postJson = json.dumps(postData)
+        return self.post(route, postJson)
+        
+# PropertyGraphNetwork methods
         
 #    network    POST    /network/{networkUUID}/edge/asPropertyGraph/{skipBlocks}/{blockSize}        PropertyGraphNetwork
     def getPropertyGraphNetworkByEdges(self, networkId, skipBlocks=0, blockSize=100):
@@ -200,7 +235,7 @@ class Ndex:
         return self.get(route)
 
 #    network    GET    /network/{networkUUID}/asPropertyGraph        PropertyGraphNetwork
-    def getPropertyGraphNetwork(self, networkId, asType = "PropertyGraph"):
+    def getCompletePropertyGraphNetwork(self, networkId):
         route = "/network/%s/asPropertyGraph" % (networkId)
         return self.get(route)
 
