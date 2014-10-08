@@ -1,0 +1,3594 @@
+
+=========================================================================
+        Citation: Landes Bioscience - Autocrine VEGF Signaling in Breast Cancer
+=========================================================================
+
+_______________________________
+Evidence: VEGFR-1 and VEGFR-2 mRNA was identified in a number of breast cancer cell lines including T-47D, MCF7, MDA-MB-453, and MDA-MB-231, and these cancer cells were shown to respond to VEGF.85,86 VEGF stimulation increased the invasiveness of T-47D cells in the presence of fibronectin.85 ERK-1 and -2 were activated in response to VEGF in T-47D cells; PI3-K and its downstream target Akt were also activated. Since T-47D cells secrete VEGF87 it is likely that an autocrine VEGF loop exists within these cells. PI3-K activation has often been implicated in cellular invasion88 and may be the signalling mechanism in T-47D cells that mediates VEGF-induced cell invasion.
+
+       p(VEGFA) INCREASES kin(p(MAPK1))
+                BodyRegion: Breast
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11062502
+=========================================================================
+
+_______________________________
+Evidence: Immunoblotting
+(western blotting) of whole NK92 cell lysates after target engagement
+demonstrated that both LY294002 and wortmannin
+treatment significantly inhibited ERK1/2 and MEK1
+and MEK2 (MEK1/2) phosphorylation in a dose dependent
+manner (Fig. 2a,b).
+
+       a(wortmannin) DECREASES kin(p(MAPK1))
+                Cell: natural killer cell
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12873708
+=========================================================================
+
+_______________________________
+Evidence: The transactivation of EGF receptor was required for bombesin-induced ERK phosphorylation
+
+       p(GRP) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+_______________________________
+Evidence: bombesin specifically induced mitogen-activated protein (MAP) kinase activation as shown by increased extracellular regulated kinase (ERK) phosphorylation and epidermal growth factor (EGF) receptor transactivation in prostate cancer cells, which express functional gastrin-releasing peptide receptor
+
+       cat(p(GRP)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: Genstruct Top Level Model for Toll-Like Receptor Signalling
+=========================================================================
+
+_______________________________
+Evidence: Not Available
+
+       cat(p(TLR4)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15292521
+=========================================================================
+
+_______________________________
+Evidence: phosphorylated IRS1 also stimulates the Ras-Raf-MEK-ERK pathway, a MAPK pathway
+
+       p(IRS1) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11676474
+=========================================================================
+
+_______________________________
+Evidence: u-PA-CAT expressed in combination with dominant negative mutant ERK construct abrogated the Urokinase-type plasminogen activator (uPA) promoter activity in PC3(AR) (AR transfected) cells. ERK dominant negative construct reduced the uPA promoter expression greater than 24-fold. Further, expression of dominant negative vectors PC4raf, CL100, and K97M for the ERK pathway reduced uPA protein expression by 75%, 82% and 57% respectively. This indicates that in MAPK pathway ERK represent a significant component in the regulation of uPA.
+
+       p(MAPK1) INCREASES p(PLAU)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11571298
+=========================================================================
+
+_______________________________
+Evidence: Additionally, Mig and SDF-1alpha activated MAPKs p44/42 and p38 on melanoma cells.
+
+       p(CXCL9) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12124327
+=========================================================================
+
+_______________________________
+Evidence: Hyaluronan-CD44 binding  stimulated Ras-Mek1-Mapk pathway, which inturn stimulated MMP-2 secretion in a time and dose dependent manner.
+
+       p(MAPK1) INCREASES cell_secretion(p(MMP2))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18632602
+=========================================================================
+
+_______________________________
+Evidence: To determine if a K57N substitution in MEK1 affected MAPK signaling, we assayed the ability
+of the mutant to induce ERK phosphorylation in 293T cells. Extracts from cells transiently
+transfected with plasmids encoding wild-type or mutant MEK1 cDNAs displayed higher levels
+of total MEK1 protein than did control-transfected cells, but only cells transfected with
+MEK1K57N cDNAs displayed enhanced levels of ERK phosphorylation (Fig. 2A).
+
+       p(MAP2K1,sub(K,57,N)) INCREASES p(MAPK3,pmod(P))
+                Disease: Neoplasm
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:7935391
+=========================================================================
+
+_______________________________
+Evidence: In addition, the Y716(P) peptide significantly decreased the amount of GTP bound to Ras [Ras activation] in response to PDGF
+
+       p(PDGFRB,pmod(P,Y,716)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16423052
+=========================================================================
+
+_______________________________
+Evidence: HSV-1 infection of HCECs resulted in a two-phase activation of nuclear factor-kappaB (NF-kappaB), JNK and p38, with the first peak at 1-4 hr and a second peak at 8 hr. HSV-1 infection resulted in I?B-? phosphorylation and degradation in a time-dependent manner in both HUCL cells and primary HCECs.
+
+       path(viral infection) INCREASES kin(p(MAPK1))
+                BodyRegion: cornea
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16332685
+=========================================================================
+
+_______________________________
+Evidence: In this study, we show that the abundance of the MKK-2 polypeptide is reduced in PABP-overexpressing cells.
+
+       p(PABPC1) DECREASES p(MAP2K2)
+                CellLine: HeLa
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10820377
+=========================================================================
+
+_______________________________
+Evidence: Expression of active PTPH1 also reduced receptor-induced activation of Erk2 MAP kinase, its upstream activator, Mek, and the Jnk kinases.
+
+       phosphatase_activity(p(PTPN3)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19273391
+=========================================================================
+
+_______________________________
+Evidence: activation of ERK depended on EGFR, Src tyrosine kinase and calcium calmodulin in
+PC12 cells (31), while requiring ras/Raf-1/MEK activation in human neutrophils (58).
+
+       p(RAS Family) INCREASES kin(p(MAPK1))
+                Cell: Neutrophils
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11520738
+=========================================================================
+
+_______________________________
+Evidence: Preincubation for 30 min with U0126, a specific noncompetitive inhibitors of the p42/p44 ERK activators, MEK1 and MEK2 inhibited IL-1 beta induced release of GM-CSF, RANTES and eotaxin by 60-70%.
+
+       p(MAP2K1) INCREASES p(CCL5)
+                Species: 9606
+       p(MAP2K2) INCREASES p(CSF2)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15364926
+=========================================================================
+
+_______________________________
+Evidence: We have found that the two pathways interact directly and that heat shock causes the physical association of ERK1 with HSF1, an interaction that promotes the kinase activity of ERK in heat-shocked cells.
+
+       complex(p(HSF1),p(MAPK3)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12087097
+=========================================================================
+
+_______________________________
+Evidence: paclitaxel activates Akt and ERK
+
+       a(paclitaxel) INCREASES kin(p(MAPK1))
+                UrogenitalSystem: Ovary
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11043579
+=========================================================================
+
+_______________________________
+Evidence: Estrogen rapidly activates the mitogen-activated protein kinases, Erk-1 and Erk-2, via an as yet unknown mechanism. requires the expression of the G protein-coupled receptor homolog, GPR30. We show that 17beta-estradiol activates Erk-1/-2 not only in MCF-7 cells, which express both estrogen receptor alpha (ER alpha) and ER beta, but
+
+       complex(a(estradiol),p(GPER)) INCREASES kin(p(MAPK1))
+                CellLine: MCF7
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10945974
+=========================================================================
+
+_______________________________
+Evidence: Consistent with the earlier results, p42/44 MAPK and its upstream kinase MEK1/2 were activated in a time-dependent manner by the induction of Pak1 (Fig. 3C).
+
+       kin(p(PAK1)) INCREASES kin(p(MAP2K1))
+                CellLine: MCF7
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11230180
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       phosphatase_activity(p(PTEN)) DECREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12834807
+=========================================================================
+
+_______________________________
+Evidence: Although there are now four known adenosine receptors, and the nomenclature has been changed and refined, the early classification scheme still mirrors the generally accepted profile of adenosine receptor G protein coupling (Table 1)
+
+       cat(p(ADORA2A)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15166095
+=========================================================================
+
+_______________________________
+Evidence: Pretreatment of HT29 cells with increasing concentrations of PD98059 (a specific inhibitor of ERK 1/2) resulted in  a dose-dependent decrease in the cell number induced by thrombin (10 nM/L), suggesting that cell proliferation induced by thrombin or AP1 involves the phosphorylation of ERKs in these cells.
+
+       p(F2R) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18411230
+=========================================================================
+
+_______________________________
+Evidence: (Figure 6B). The average of three experiments
+showed that 55.8+6.9% of ERK phosphorylation and
+43.0+7.9% of IkBa degradation were reverted by the Ras
+inhibitor.
+
+       cat(p(TLR2)) INCREASES kin(p(MAPK1))
+                Cell: Macrophages
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10882715
+=========================================================================
+
+_______________________________
+Evidence: GEF activity of Ras-GRF1 toward Ha-Ras, as defined by in vitro GDP binding and release assays, was augmented after tyrosine phosphorylation by ACK1.
+
+       p(RASGRF1,pmod(P,Y)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12169734
+=========================================================================
+
+_______________________________
+Evidence: the growth factor-stimulated signaling network controlled by MAPK1,2/PKC can operate with 1 or 2 stable states at low concentrations of MAPK phosphatase, DUSP1, the system exhibits bistable behavior, such that brief stimulus results in sustained MAPK activation
+
+       phosphatase_activity(p(DUSP1)) DIRECTLY_DECREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10908564
+=========================================================================
+
+_______________________________
+Evidence: We found that the phosphorylation of Akt induced by EGF was totally abolished in TE-5 cells and partially blunted in TE-8 and T.T cells by the dominant negative ras vector (Fig.11  A). 
+
+       p(HRAS) INCREASES (reifiedEdge: 41548)
+                Disease: Carcinoma of esophagus
+                BodyRegion: esophagus
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16518842
+=========================================================================
+
+_______________________________
+Evidence: Expression of constitutively active H-Ras(12V), K-Ras(12V) or N-Ras(13V) in PC12-ErbB4 cells induced ErbB4-receptor phosphorylation, indicating that each of the most abundant Ras isoforms can induce receptor activation. NRG-induced phosphorylation of ErbB4 receptor was blocked by the soluble ErbB4 receptor, which had no effect on the Ras-induced receptor phosphorylation.
+
+       gtp_bound_activity(p(NRAS)) INCREASES p(ERBB4,pmod(P,Y))
+                Species: 9606
+_______________________________
+Evidence: Using a mutant ErbB4 receptor, which lacks kinase activity, we demonstrated that the Ras-mediated ErbB4 phosphorylation depends on the kinase activity of the receptor and facilitates ligand-independent neurite outgrowth in PC12-ErbB4 cells. These experiments demonstrate a novel mechanism controlling ErbB receptor activation. Ras induces ErbB4 receptor phosphorylation in a non-autocrine manner and this activation depends on multiple Ras effector pathways and on ErbB4 kinase activity.
+
+       gtp_bound_activity(p(NRAS)) INCREASES kin(p(ERBB4))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11463760
+=========================================================================
+
+_______________________________
+Evidence: PP1, an inhibitor of SRC kinase totally inhibited both basal and thrombin stimulated p42/44 MAPK phosphorylation, indicating dependence of MAP kinase activation on Src tyrosine kinase.
+
+       p(SRC) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17513611
+=========================================================================
+
+_______________________________
+Evidence: Figure 5. Cluster analysis of genes differentially expressed by lapatinib.
+
+       a(lapatinib) DECREASES r(HRAS)
+                CellLine: BT474 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10714766
+=========================================================================
+
+_______________________________
+Evidence: The Estradiol induced Cyclin D1 upregulation, increase in the activity of CDK2  and activation of Rb was inhibited by the MEK1/MEK2 inhibitor U0126.
+
+       a(estradiol) INCREASES p(MAP2K1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11849969
+=========================================================================
+
+_______________________________
+Evidence: Despite remarkable progress in dissecting the signaling pathways that are crucial for the metabolic effects of insulin, the molecular basis for the specificity of its cellular actions is not fully understood. One clue might lie in the spatial and temporal aspects of signaling. Recent evidence suggests that signaling molecules and pathways are localized to discrete compartments in cells by specific protein interactions. Also, the rapid termination of tyrosine or lipid phosphorylation by phosphatases or serine kinases might tightly control the strength of a signaling pathway, thus determining its effect on growth, differentiation and metabolism. Insulin is the most potent anabolic hormone known, promoting the synthesis and storage of carbohydrates, lipids and proteins and inhibiting their degradation and release back into the circulation. Decreased secretion of insulin, coupled with resistance to its actions, results in type 2 diabetes, a devastating disease that is reaching epidemic proportions [1]. Even in the absence of diabetes, insulin resistance is often associated with central obesity, hypertension, polycystic ovarian syndrome, dyslipidemia and atherosclerosis. At the cellular level, insulin action is characterized by diverse effects, including changes in vesicle trafficking, stimulation of protein kinases and phosphatases, promotion of cellular growth and differentiation and activation or repression of transcription. This complexity suggests that insulin action must involve multiple signaling pathways that diverge at or near the activation of its tyrosine kinase receptor. In fact, it is likely that even individual effects of the hormone require multiple signaling inputs. Evidence is emerging that the coordination of these pathways might be governed by their intracellular compartmentalization or duration of action. Here, we consider how temporal and spatial aspects of signal transduction play a crucial role in determining the specificity of insulin action, focusing on signal initiation from the receptor that is spatially segregated into discrete domains of the plasma membrane, as well as the mechanisms that determine the duration of individual signaling pathways. Together, these factors help to differentiate insulin from other hormones that share some of the same overall signaling properties. Divergent signaling pathways are initiated by insulin receptor substrates. The insulin receptor is a tyrosine kinase that catalyzes the phosphorylation of several intracellular substrates, including the insulin receptor substrate (IRS) proteins [2], GAB-1 [3], Shc [4], APS [5], p60DOK [6], SIRPS [7] and c-Cbl [8] (Fig. 1). Each of these substrates recruits a distinct subset of signaling proteins containing Src homology 2 (SH2) domains, which interact specifically with sequences surrounding the phosphotyrosine residue. Moreover, each of these substrates can be confined to distinct locations in the cell by specific sequences that direct interactions with other proteins or lipids. Most attention in the field of insulin receptor substrates has focused on the IRS family of proteins. Mice lacking the IRS-1 protein are insulin resistant but do not develop overt diabetes [9,10]. By contrast, animals lacking IRS-2 exhibit both impaired glucose tolerance and diabetes [11], which appears to result from a defect in insulin secretion as well as insulin resistance, presumably owing to decreased b-cell proliferation in the pancreas in the face of increased demand for insulin. Despite the similarity in structure and function, the apparent differences in phenotype between IRS1 and IRS2 knockout mice underscore a specific signaling specificity that probably results from their tissue distribution, subcellular location, activation&ndash;inactivation kinetics and combinatorial interactions with downstream effectors [12]. The tyrosine phosphorylation of IRS family members generates docking sites for sev...
+
+       kin(p(MAP2K2)) DIRECTLY_INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+       p(SOS1) DIRECTLY_INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9531572
+=========================================================================
+
+_______________________________
+Evidence: Thus, one function of Rho A may be to regulate cytoskeletal organization and integrin clustering rather than integrin affinity.92 Expression of activated R-Ras increases integrin-mediated adhesion in some cells,93 but its presence in platelets has not been demonstrated. Thrombin stimulation of platelets causes GTP loading of H-Ras in a PKC-dependent manner
+
+       cat(p(F2)) INCREASES gtp_bound_activity(p(HRAS))
+                Cell: Blood Platelets
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12007959
+=========================================================================
+
+_______________________________
+Evidence: Twenty-eight genes were found to be induced or upregulated by heat-shock in IMC-3 cells. These included genes involved in the apoptosis (e.g., CC3, caspase10), tumor invasion (e.g., CC3, TIMP-3), cell cycle checkpoint control (e.g., DP-1, CDC25A), signal transduction (e.g., MEK1) as well as genes associated with heat stress (e.g., Hsp70B', Hsp40)
+
+       bp(response to heat) INCREASES r(MAP2K1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12732644
+=========================================================================
+
+_______________________________
+Evidence: RASSF2 binds directly to K-Ras in a GTP-dependent manner via the Ras effector domain.
+
+       gtp_bound_activity(p(KRAS)) INCREASES complex(p(KRAS),p(RASSF2))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11278548
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       cat(p(PTGER4)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15375377
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(MDM2) INCREASES p(RAF1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17081983
+=========================================================================
+
+_______________________________
+Evidence: We have detected 6,600 phosphorylation sites on 2,244 proteins and have determined their temporal dynamics after stimulating HeLa cells with epidermal growth factor (EGF) and recorded them in the Phosida database
+
+       p(EGF) INCREASES p(RAF1,pmod(P,S,294))
+                CellLine: HeLa
+                CellStructure: Cytoplasm
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18344980
+=========================================================================
+
+_______________________________
+Evidence: To test if activation of HRas or NRas by eNOS is required for
+pancreatic tumour growth, HRas or NRas were knocked down by
+shRNA in CFPac-1 and/or MIAPaCa-2 cells and complemented with
+an HRas or NRas that was engineered to be resistant to RNAi (HRasR,
+NRasR) in the wild-type or C118S mutant configuration. Resultant
+cells were then assayed for tumour growth in mice. Positive control,
+scramble-treated CFPac-1 and/or MIAPaCa-2 cells readily formed
+tumours in mice, whereas this growth was reduced when endogenous
+HRas, and to a lesser degree NRas, was knocked down. This loss of
+tumour growth was rescued by expressing the appropriate wild-type
+HRas or NRas, but not the C118S nitrosylation mutants (Fig. 4e, f
+and Supplementary Figs 11–13
+
+       gtp_bound_activity(p(NRAS)) INCREASES path(tumor growth)
+                CellLine: MiaPaCa cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10602518
+=========================================================================
+
+_______________________________
+Evidence: Thus, FGF2-induced cell survival is a progressive adaptive phenomenon involving ERK2 activation by excreted FGF1
+
+       p(FGF1) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11739606
+=========================================================================
+
+_______________________________
+Evidence: PGE2-induced IL6 synthesis was dose-dependently inhibited by the p38 MAPK inhibitor, SB202190. This indicates that p38 MAPK activates the release of IL6.
+
+       p(MAPK1) INCREASES p(IL6)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12716735
+=========================================================================
+
+_______________________________
+Evidence: U0126 also completely abolished the insulin-stimulated increase of the activated (phosphorylated) ERK1/2. it was shown that MAPKp38 inhibits MEK1/2
+
+       kin(p(MAPK14)) DECREASES kin(p(MAP2K1))
+                Species: 9606
+_______________________________
+Evidence: inhibition of MAPKp38 by SB202190 enhanced the activation/phosphorylation of ERK1/2,
+
+       kin(p(MAPK p38 Family)) DECREASES p(MAPK1,pmod(P))
+                CellLine: HepG2 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11882652
+=========================================================================
+
+_______________________________
+Evidence: Treatment of cells with U0126, MEK1 inhibitor during exposure to Amyloid beta 1-42 completely abolished the Amyloid beta evoked ERK activation and slightly increased the amount of apoptotic cell death compared with Amyloid beta treatment alone.
+
+       p(APP) INCREASES p(MAP2K1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11395491
+=========================================================================
+
+_______________________________
+Evidence: In this study, we have attempted to identify the critical tyrosine residues in LAT that mediate TCR activation-induced mobilization of intracellular Ca(2+) and activation of the MAP kinase Erk2.
+
+       p(23595,pmod(P,Y)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16170185
+=========================================================================
+
+_______________________________
+Evidence: 134-136,140,142 This site is also phosphorylated in response to stimulation by growth factors, integrins, Ras, PAK1, and PAK3.
+
+       gtp_bound_activity(p(RAS Family)) INCREASES p(RAF1,pmod(P,S,338))
+                Species: 9606
+_______________________________
+Evidence: Phosphorylation. Raf is principally activated by phosphorylation of specific amino acid residues as shown for each isoform in Figure 4. From an evolutionary standpoint, the Raf activation sites are highly conserved from yeast to humans. Several amino acids in Raf, particularly serine (S) 259 and S621, which bind 14-3-3 and maintain C-Raf in a closed auto-inhibited conformation, are phosphorylated in the basal state.
+
+       p(RAF1,pmod(P,S,621)) INCREASES (reifiedEdge: 166520)
+                Species: 9606
+       p(RAF1,pmod(P,S,259)) INCREASES (reifiedEdge: 166516)
+                Species: 9606
+_______________________________
+Evidence: Y341 is phosphorylated by the Src family of non-RTKs, Janus kinase, and erythropoietin.
+
+       kin(p(JAK1)) DIRECTLY_INCREASES p(RAF1,pmod(P,Y,341))
+                Species: 9606
+       p(EPO) INCREASES p(RAF1,pmod(P,Y,341))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15728708
+=========================================================================
+
+_______________________________
+Evidence: LPA mediated Akt activation was inhibited by pertussis toxin (PTX), whereas Erk1/2 activation was completely inhibited by a blocker of phospholipase Cbeta, U-73122.
+
+       cat(p(PLCB2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+       cat(p(PLCB1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+       cat(p(PLCB4)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11371563
+=========================================================================
+
+_______________________________
+Evidence: Using sequence-specific peptides, we found that the second proline-rich domain of DOC-2/DAB2 is the key binding site to Grb2 in the presence of growth factors. Such elevated binding interrupts the binding between SOS and Grb2, which consequently suppresses downstream ERK phosphorylation. Reduced ERK phosphorylation was restored when the binding between DOC-2/DAB2 and Grb2 was interrupted by a specific peptide or by increasing the expression of Grb2.
+
+       complex(p(GRB2),p(DAB2)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10559258
+=========================================================================
+
+_______________________________
+Evidence: Here we show that RIP2 activates the extracellular signal-regulated kinase (ERK) pathway and that the kinase activity of RIP2 appears to be important in this process.
+
+       kin(p(RIPK2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15526160
+=========================================================================
+
+_______________________________
+Evidence: The adapter protein Grb2 can directly associate with phosphorylated Y703 and Y936 in c-Kit
+
+       complex(p(GRB2),p(KIT,pmod(P,Y,703))) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11812785
+=========================================================================
+
+_______________________________
+Evidence: After activating Ras using EGF, the GTP-bound form of Ras was precipitated with GST-RBD (GST-Raf containing Ras binding domain). Precipitated Ras was detected using the HA-antibody. As shown in Fig. 5D, in the presence of EGF, the amount of GTP-bound Ras increased over that of the control. Levels of the GTP-bound Ras significantly decreased in cells expressing DIP1/2; however, DIP1/2m failed to stimulate Ras GTPase in cells treated with EGF.
+
+       kin(p(EGFR)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14641023
+=========================================================================
+
+_______________________________
+Evidence: on ERK there is a serine residue which can be phosphorylated by PKA, whereupon docking to ERK is ablated
+
+       p(PRKA Family) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15294035
+=========================================================================
+
+_______________________________
+Evidence: exercise leads to the activation of at least three MAPK signalling pathways, i.e. ERK1/2, p38 MAPK and JNK, in skeletal muscle (Zierath, 2002).
+
+       bp(Exercise) INCREASES kin(p(MAPK1))
+                Tissue: Muscle, Skeletal
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11522622
+=========================================================================
+
+_______________________________
+Evidence: From mutations file
+
+       p(HRAS,sub(G,12,V)) DIRECTLY_INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11297548
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       kin(p(ERBB3)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11739273
+=========================================================================
+
+_______________________________
+Evidence: TRAF6 activates the extracellular signal–regulated
+kinases (ERK) 1 and 2 as well as p38 mitogen-activated
+protein kinase (MAPK),11,118–125
+
+       p(TRAF6) INCREASES kin(p(MAPK1))
+                CellLine: 293T cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15212693
+=========================================================================
+
+_______________________________
+Evidence: 11971957;10576742;12801936
+
+       kin(complex(AMP Activated Protein Kinase Complex)) DIRECTLY_INCREASES p(RAF1,pmod(P,S,259))
+                Species: 9606
+_______________________________
+Evidence: 11510412;10869359
+
+       kin(p(PRKA Family)) DIRECTLY_INCREASES p(BRAF,pmod(P,S,429))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16569214
+=========================================================================
+
+_______________________________
+Evidence: Assays for GTP loading and H-Ras interactions with the Ras-binding domain on Raf-1 demonstrated a decrease in H-Ras activity in the presence of NO*. 
+
+       a(nitric oxide) DECREASES gtp_bound_activity(p(HRAS))
+                CellLine: 293
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16227603
+=========================================================================
+
+_______________________________
+Evidence: Pak4-induced arrest appears to be mediated by a pathway that requires the ERK mitogen-activated protein kinase, as well as the cell cycle inhibitors p16(INK4) and p19(ARF).
+
+       kin(p(PAK4)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11123304
+=========================================================================
+
+_______________________________
+Evidence: CaMKIV, and p38 MAPK were also the kinases involved in CREB Ser(133) phosphorylation induced by CD3/CD28.
+
+       p(CD247) INCREASES kin(p(MAPK1))
+                Cell: t-cell
+                Species: 9606
+_______________________________
+Evidence: CD3/CD28-promoted CREB-CBP interactiondependent on p38 mitogen-activated protein kinase (MAPK) and calcium/calmodulin-dependent protein kinase (CaMK) IV
+
+       p(MAPK1) INCREASES complex(p(CREBBP),p(CREB1))
+                Cell: t-cell
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12942541
+=========================================================================
+
+_______________________________
+Evidence: (b) the expression of c-fos mRNA and protein (c) the phosphorylation of the extracellular signal-regulated protein kinases 1 and 2 (ERK1/2)
+
+       p(183) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11350732
+=========================================================================
+
+_______________________________
+Evidence: VEGF-induced PGI2 production is mediated via ERK1/2-dependent activation of cytosolic phospholipase A2
+
+       a(Epoprostenol) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15069082
+=========================================================================
+
+_______________________________
+Evidence: Insulin action on Na+, K+-ATPase was dependent on ERK1/2 in HSMCs. Insulin also increased phosphorylation and plasma membrane content of the Na+,K+-ATPase alpha1- and alpha2-subunits. The insulin induced phosphorylation at threonine and proline motif of alpha subunits inhibited by ERK1/2 inhibitors and its upstream kinase inhibitors. Results of in-vitro assay showed that ERK1/2 phosphorylated alpha subunits of Na+, K+-ATPase.
+
+       p(MAPK1) INCREASES p(ATP1A1,pmod(P))
+                Species: 9606
+       p(MAPK1) INCREASES p(ATP1A1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15155804
+=========================================================================
+
+_______________________________
+Evidence: Lastly, PV1 upregulation by PMA required the activation of Erk1/2 MAP kinase pathway and was protein kinase C independent
+
+       p(MAPK1) INCREASES p(PLVAP)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18791328
+=========================================================================
+
+_______________________________
+Evidence: In macrophages, CD74 demonstrates high-affinity
+binding to MIF. MIF binds to the extracellular domain of
+CD74; this complex is required for MIF-mediated MAPK
+activation and cell proliferation [16] .
+
+       complex(p(CD74),p(MIF)) INCREASES kin(p(MAPK1))
+                Cell: Macrophages
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12167619
+=========================================================================
+
+_______________________________
+Evidence: Expression of RSV-tat induced the activation C/EBP beta in a dose dependent manner. The maximum activation (approximately 9-12-fold) of the transcription factors occurred in cells transfected with 0.2 micro g of RSV-tat. PD98059 (ERK inhibitor) dose-dependently inhibited RSV-tat induced activation of C/EBP.
+
+       p(MAPK1) INCREASES p(CEBPB)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11971021
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(MAPK1) INCREASES p(SOCS3)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15143158
+=========================================================================
+
+_______________________________
+Evidence: PTPD1 activates src tyrosine kinase and increases the magnitude and duration of epidermal growth factor (EGF) signaling. EGF receptor phosphorylation and downstream activation of ERK 1/2 and Elk1-dependent gene transcription are enhanced by PTPD1.
+
+       phosphatase_activity(p(PTPN21)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12551992
+=========================================================================
+
+_______________________________
+Evidence: Phosphorylation levels of Pyk2, MEK1 and MEK2 were increased 1 to 15 min after treatment with BaL gp120.
+
+       p(30816) INCREASES p(MAP2K2)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12794189
+=========================================================================
+
+_______________________________
+Evidence: Genetic and biochemical experiments have demonstrated that kaposin A activates the ERK1/2 pathway by recruiting the guanine nucleotide exchange factor cytohesin-1 to membranes, leading to enhanced GTP binding of the GTPase, ARF1
+
+       gtp_bound_activity(p(ARF1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9920656
+=========================================================================
+
+_______________________________
+Evidence: Cells treated with Src-family specific inhibitor, PP1 effectively inhibited Abeta induced activation of Erk, p38 Mapk and Creb.
+
+       p(LYN) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11571295
+=========================================================================
+
+_______________________________
+Evidence: However, using an inhibitor of ERK activation, U0126, we show that Alb-AGE stimulates VEGF expression through an ERK-dependent pathway. Accordingly, we found that Alb-AGE activated mitogen-activate protein kinase, ERK1/2, JNK1/2, but not p38, and that Alb-AGE did not activate PI3K and PKB. Moreover, Alb-AGE activated the transcription factor, hypoxia inducible factor-1 (HIF-1) DNA binding activity. This activation is mediated by an increase in accumulation of the HIF-1alpha protein through an ERK-dependent pathway.
+
+       a(Advanced Glycation End Product) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11524422
+=========================================================================
+
+_______________________________
+Evidence: Full activation of ERK2 requires phosphorylation at both a threonine residue (Thr(183)) conserved in most protein kinases as well as a tyrosine residue (Tyr(185)) unique to members of the mitogen-activated protein kinase family. 
+
+       p(MAPK1,pmod(P,Y,187)) DIRECTLY_INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12524533
+=========================================================================
+
+_______________________________
+Evidence: Components of these pathways (Shc, p44/42 MAPK kinase, Akt/protein kinase B and p70s6k) are phosphorylated in response to progranulin7,10 and have been previously implicated in the ability of progranulin to stimulate cell division.
+
+       cat(p(GRN)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12582199
+=========================================================================
+
+_______________________________
+Evidence: ...inhibition of p38 MAPK with pyridinylimidazoles and azaazulenes inhibits glucose transport, but not translocation of endogenous Glut4 in 3T3-L1 adipocytes...
+
+       p(MAPK1) INCREASES path(adipose glucose import)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14984767
+=========================================================================
+
+_______________________________
+Evidence: MAPK. Stimulation of ERK by endothelial-cell integrins is mediated by either FAK, or the Src-family kinases Fyn and Yes.
+
+       kin(p(YES1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10910097
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       kin(p(KIT)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11877390
+=========================================================================
+
+_______________________________
+Evidence: ANGPTL3 bound to alpha(v)beta(3) and induced integrin alpha(v)beta(3)-dependent haptotactic endothelial cell adhesion and migration and stimulated signal transduction pathways characteristic for integrin activation, including phosphorylation of Akt, mitogen-activated protein kinase, and focal adhesion kinase
+
+       cat(complex(p(ITGAV),p(ITGB3))) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12928036
+=========================================================================
+
+_______________________________
+Evidence: IGF1 binding activates the IGF1 receptor (IGFR), a receptor tyrosine kinase. The IGFR subsequently recruits the insulin receptor substrate (IRS1), which results in the activation of two signaling pathways: the RasRaf MEK ERK pathway  and the PI3K Akt pathway
+
+       p(IRS1,pmod(P,Y)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10786665
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       a(Geldanamycin) DECREASES p(RAF1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11075717
+=========================================================================
+
+_______________________________
+Evidence: Phosphorylated Shc binds to Grb2 which forms a complex with Sos guanine nucleotide exchange factor for p21ras.
+
+       p(SHC1,pmod(P,Y,317)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14751852
+=========================================================================
+
+_______________________________
+Evidence: HDGF also activated specific ERK1/2 signaling
+
+       p(HDGF) INCREASES kin(p(MAPK1))
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11073973
+=========================================================================
+
+_______________________________
+Evidence: To determine if other receptor-associated cofactors were targets of cAMP-dependent signaling pathways, we examined the phosphorylation of steroid receptor coactivator 1 (SRC-1). We detected a 1.8-fold increase in SRC-1 phosphorylation in transfected COS-1 cells incubated with 8-bromo-cAMP. Phosphorylation was increased on two mitogen-activated protein kinase (MAPK) sites, threonine 1179 and serine 1185.
+
+       a(cyclic AMP) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12133893
+=========================================================================
+
+_______________________________
+Evidence: muscle contractions lead to an increase in ERK1/2, isoforms of MAP kinase (39)
+
+       bp(muscle contraction) INCREASES r(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15282307
+=========================================================================
+
+_______________________________
+Evidence: Here we show that upon Fas, tumor necrosis factor alpha receptor, or tumor necrosis factor alpha-related apoptosis-inducing ligand receptor stimulation, an inhibition of extracellular signal-regulated kinase 1 and 2 (ERK1/2) activation sensitizes wild-type but not K8-null mouse hepatocytes to apoptosis and that a much weaker ERK1/2 activation occurs in K8-null hepatocytes.
+
+       cat(p(CD40)) DECREASES kin(p(MAPK1))
+                Cell: hepatocyte
+                Species: 9606
+       p(KRT8) INCREASES kin(p(MAPK1))
+                Cell: hepatocyte
+                Species: 9606
+_______________________________
+Evidence: c-Flip, along with Raf-1, is part of a K8/K18-immunoisolated complex from wild-type hepatocytes, and Fas stimulation leads to further c-Flip and Raf-1 recruitment in the complex.
+
+       p(FAS) INCREASES complex(p(KRT18),p(KRT8),p(RAF1),p(CFLAR))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19223555
+=========================================================================
+
+_______________________________
+Evidence: A549 cells harbor the K-ras
+mutation. Active Ras can induce p21Cip1/Waf1 expression and cell
+cycle arrest via the p14Arf-p53 pathway, which is defective in A549
+cells (Supplementary Fig. S1A) and via mitogen-activated protein
+kinase (MAPK) signaling (43).
+
+       p(KRAS) INCREASES p(CDKN1A)
+                CellLine: A549
+                Species: 9606
+_______________________________
+Evidence: After stimulation with the mitogen phorbol 12-myristate 13-
+acetate (PMA) or serum, conditionally expressed RASSF1A
+specifically enhanced the activating phosphorylation of ERK, but
+not of p38 kinase or c-Jun NH2 kinase (Fig. 5A).
+
+       p(RASSF1) INCREASES p(MAPK1,pmod(P,T,185))
+                CellLine: A549
+                Species: 9606
+_______________________________
+Evidence: Raf itself is negatively regulated by phosphorylation at Ser259 through Akt, an important effector of
+phosphoinositide 3-kinase (PI3K) signaling (30, 44).
+
+       p(AKT Family) DIRECTLY_INCREASES p(RAF1,pmod(P,S,259))
+                CellLine: A549
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10982368
+=========================================================================
+
+_______________________________
+Evidence: MEK1 and MEK2 inhibitor, UO126, partially abrogated MCP-1 mRNA induction by Tat, indicating that MEK1 and MEK2 induce the production of MCP-1 modestly.
+
+       p(MAP2K2) INCREASES p(CCL2)
+                Species: 9606
+_______________________________
+Evidence: IL-8 mRNA induction by Tat was almost completely blocked by the MEK1 and MEK2 inhibitor, UO126, at a concentration of 1 microM, indicating that MEK1 and MEK2 are activated by Tat.
+
+       p(TAT) INCREASES p(MAP2K2)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11292833
+=========================================================================
+
+_______________________________
+Evidence: THP-1 cells treated with p43 activated MAPK3 and MAPK1 by phosphorylation in a time and dose dependent manner. The activation of ERK1/2 was observed from 1 nM of p43 and continued till 1 hour.
+
+       p(9255) INCREASES p(MAPK1)
+                CellLine: THP-1 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15143197
+=========================================================================
+
+_______________________________
+Evidence: In addition, NHERF2 increases LPA-induced ERK activation, which is followed by cyclooxygenase-2 induction via a PLC-dependent pathway.
+
+       cat(p(LPAR2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+       complex(p(SLC9A3R2),p(LPAR2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10823834
+=========================================================================
+
+_______________________________
+Evidence: Fibroblasts electroinjected with a mouse monoclonal anti-IRAK antibody to block the recruitment of IRAK into FACs failed to activate ERK after IL-1 treatment, indicating that FAC-associated IRAK is required for the activation of ERK.
+
+       kin(p(IRAK1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:8524223
+=========================================================================
+
+_______________________________
+Evidence: We show that phospholipase C gamma, phosphatidylinositol 3-kinase/p70 S6 kinase, Shc, Grb2, Raf-1, and mitogen-activated protein kinase are downstream components of the Nyk/Mer signal transduction pathways. 
+
+       kin(p(MERTK)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16729045
+=========================================================================
+
+_______________________________
+Evidence: In this paper, we present a comprehensive pathway map of EGFR signaling and other related pathways. The map reveals that the overall architecture of the pathway is a bow-tie (or hourglass) structure with several feedback loops.  See figure 2: The bow-tie architecture of the EGFR signaling pathway.
+
+       kin(p(MAP3K1)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11752463
+=========================================================================
+
+_______________________________
+Evidence: Indeed, mucin1 is also overexpressed in breast cancers and
+tyrosine phosphorylation of the CT domain of MUC1 mucin leads
+to activation of amitogen-activated protein kinase pathway through
+the Ras-MEK-ERK2 pathway (38, 39).
+
+       p(MUC1,pmod(P,Y)) INCREASES kin(p(MAPK1))
+                BodyRegion: Breast
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15054093
+=========================================================================
+
+_______________________________
+Evidence: The mechanism by which CCL19 activates ERK1/2 was determined to be beta-arrestin-dependent, because it is reduced both by depletion of beta-arrestin-2 with small interfering RNA and by elimination of the phosphorylation sites in the tail of the receptor
+
+       cat(p(CCR7)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:3945555
+=========================================================================
+
+_______________________________
+Evidence: From mutations file
+
+       p(KRAS,sub(G,12,R)) DIRECTLY_INCREASES gtp_bound_activity(p(RAS Family))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12851702
+=========================================================================
+
+_______________________________
+Evidence: Sodium salicylate activated p38MAPK through phosphorylation at Thr 180/Tyr 182 and Akt/PKB at Ser 473, whereas it partially activated ERK1/2 through its phosphorylation at Thr 202/Tyr 204.
+
+       a(Sodium Salicylate) INCREASES kin(p(MAPK1))
+                CellLine: HCT116 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15587681
+=========================================================================
+
+_______________________________
+Evidence: Binding of (pro)renin to the receptor mediates (pro)renin cellular effects by activating MAP kinases ERK1/2.
+
+       cat(p(REN)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: GSK PI3K Phase 2 Temporary Phospho
+=========================================================================
+
+_______________________________
+Evidence: GSK PI3K Phase 2, part 1: List of non-position specific phosphorylation effects on parent protein's activity, derived from existing causal assertions of position-specific phosphorylations on the parent protein activity.
+
+       p(BRAF,pmod(P,S)) DIRECTLY_INCREASES kin(p(BRAF))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16843264
+=========================================================================
+
+_______________________________
+Evidence: As shown in Figure 7D,
+both 2 mM INCB3619 and 0.5 mM gefitinib significantly reduced
+ERK phosphorylation, while the combined effect is even more
+dramatic.
+
+       a(gefitinib) DECREASES p(MAPK1,pmod(P,T,185))
+                CellLine: NCI-H1666
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12395108
+=========================================================================
+
+_______________________________
+Evidence: ERK is induced by protein kinase C and causes CREB phosphorylation.
+
+       p(MAPK1) INCREASES p(CREB1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15777538
+=========================================================================
+
+_______________________________
+Evidence: VLDL activated mitogen-activated protein kinase-ERK kinase 1/2 (MEK1/2), and potentiated LPS-induced MEK1/2 activation.
+
+       a(lipopolysaccharide) INCREASES cat(p(MAP2K1))
+                Cell: Macrophages
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11715015
+=========================================================================
+
+_______________________________
+Evidence: The expression of cyclin D1 in mid-G1 phase is associated with sustained ERK activity, and we show here that Rho is required for the sustained ERK signal.
+
+       p(RHO Family) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11029660
+=========================================================================
+
+_______________________________
+Evidence: From mutations file
+
+       p(NRAS,sub(Q,61,K)) DIRECTLY_INCREASES gtp_bound_activity(p(NRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9843681
+=========================================================================
+
+_______________________________
+Evidence: Additionally, Syk and Vav1 cooperatively induced activation of Jun N-terminal kinase (JNK), extracellular-signal-regulated kinase 2 (ERK2) and the kinase Akt, and phosphorylation of the oncoprotein Cbl in fibrinogen-adherent cells.
+
+       kin(p(SYK)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:7535768
+=========================================================================
+
+_______________________________
+Evidence: Recombinant HVH2 phosphatase exhibited a high substrate specificity toward activated ERK and dephosphorylated both threonine and tyrosine residues of activated ERK1 and ERK2
+
+       phosphatase_activity(p(DUSP4)) DIRECTLY_DECREASES p(MAPK1,pmod(P,T,185))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16149052
+=========================================================================
+
+_______________________________
+Evidence: MEK1/2 inhibitors, such as PD98059 and U0126, reduced RA-induced ERK1/2 activity, but could not block the genistein effects.
+
+       a(Tretinoin) INCREASES kin(p(MAPK1))
+                CellLine: NT2 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11445578
+=========================================================================
+
+_______________________________
+Evidence: These results suggest that activated ERK can phosphorylate Gab1
+
+       p(MAPK1) INCREASES p(GAB1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16009787
+=========================================================================
+
+_______________________________
+Evidence: Histamine induced a time-dependent, H1 receptor-mediated activation of p38 MAP kinase (p38), p44/42 MAP kinase (ERK), and c-jun terminal NH2 kinase (JNK).
+
+       a(histamine) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11739559
+=========================================================================
+
+_______________________________
+Evidence: Transfection of the native Src inhibitor, C-terminal Src kinase (Csk), also suppressed crystal-induced c-Src, ERK1/2, and IkappaBalpha phosphorylation and IL-8 expression.
+
+       kin(p(CSK)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10869359
+=========================================================================
+
+_______________________________
+Evidence: PhosphoElm data from PMID 15212693
+
+       kin(p(AKT Family)) DIRECTLY_INCREASES p(BRAF,pmod(P,S,429))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11124968
+=========================================================================
+
+_______________________________
+Evidence: Furthermore, this blunting of PKCdelta activation leads to an inhibition of PKCdelta-dependent activation of ERK1/2 and ERK1/2-dependent monocyte differentiation.
+
+       kin(p(PRKCD)) INCREASES kin(p(MAPK1))
+                Species: 9606
+_______________________________
+Evidence: reduction in CD45 expression caused the duration of peak PMA-induced MEK and extracellular signal-regulated kinase (ERK) 1/2 activity to increase from 5 min to 30 min while leading to a 4-fold increase in PMA-dependent PKCdelta activation.
+
+       phosphatase_activity(p(PTPRC)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12121973
+=========================================================================
+
+_______________________________
+Evidence: Ras V12 (clonal line of c-Ha-Ras (V12)) transfected H82 SCLC cells expressed PKC epsilon and transformed to the NSCLC-like phenotype.
+
+       p(HRAS,sub(G,12,V)) INCREASES p(PRKCE)
+                CellLine: NCI-H82 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17922028
+=========================================================================
+
+_______________________________
+Evidence: (from text) Coexpression of high as well as of low levels of ectopic RasV12 negatively regulated tuberin's proapoptotic potential, studied on the effects of tuberin on the amount of subG1 cells.
+
+       p(HRAS,sub(G,12,V)) DECREASES cat(p(TSC2))
+                CellLine: HeLa
+                Species: 9606
+_______________________________
+Evidence: On the other hand the cell
+survival effects of Ras were accompanied by a strong
+upregulation of ERK activity (represented by phosphorylated
+ERK1/2 Thr202/Tyr204) and by upregulation
+of the activity of p70S6K (represented by the
+phosphorylation status of the major p70S6K target S6)
+(Figures 3b and c)
+
+       p(HRAS,sub(G,12,V)) INCREASES p(MAPK3,pmod(P,T,202))
+                CellLine: HeLa
+                Species: 9606
+       p(HRAS,sub(G,12,V)) INCREASES p(RPS6,pmod(P,S,235))
+                CellLine: HeLa
+                Species: 9606
+       p(HRAS,sub(G,12,V)) INCREASES p(MAPK1,pmod(P,T,185))
+                CellLine: HeLa
+                Species: 9606
+_______________________________
+Evidence: Detection of PARP cleavage (Figure 4a) and analysing
+the amount of subG1 cells (Figure 2c) demonstrated
+that this U0126-mediated block of the MEK/ERK/RSK
+cascade triggered a significant loss of the potential of
+Ras to mediate cell survival over tuberin-induced
+apoptosis.
+
+       p(HRAS,sub(G,12,V)) DECREASES cell_secretion(p(PARP1))
+                CellLine: HeLa
+                Species: 9606
+_______________________________
+Evidence: TSC2 S1798A mutant.Thi s mutant was
+used to prove that RSK-dependent phosphorylation of
+tuberin on Ser1798 inhibits its potential to turn off Rheb
+and to downregulate the activities of mTOR and
+p70S6K.Mu tation of Ser1798 inhibited most of tuberin
+phosphorylation and inactivation by RSK (Roux et al.,
+2004).Invest igating PARP cleavage, caspase 3 cleavage, the percentage of HOPI-positive cells and the percentage
+of subG1 cells demonstrated that the cell survival effects
+of activated Ras over tuberin-induced apoptosis are
+significantly diminished by this mutation in TSC2
+(Figures 5a–c).
+
+       p(HRAS,sub(G,12,V)) DECREASES bp(Apoptosis)
+                CellLine: HeLa
+                Species: 9606
+       p(HRAS,sub(G,12,V)) DECREASES cell_secretion(p(CASP3))
+                CellLine: HeLa
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11821958
+=========================================================================
+
+_______________________________
+Evidence: Inhibitory effect of EGF and OSM on cell proliferation was completely blocked by MEK1 inhibitor (PD98059).
+
+       p(OSM) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14991903
+=========================================================================
+
+_______________________________
+Evidence: The chondrocyte cell lines C28/I2, C20/A4, and T/C28a2/a4 expressed functionally active VEGFR-2. VEGF stimulation induced receptor phosphorylation, activation of the mitogen-activated protein kinases ERK 1/2, and long-lasting activation of the transcription factor AP-1 (activator protein-1). VEGF increased secreted MMP-1, MMP-3, and especially MMP-13, which could be effectively reduced by an inhibitor of VEGFR-2 kinase activity. Interestingly, VEGF diminished the expression of TIMP-1 and especially TIMP-2.
+
+       p(VEGF Family) INCREASES kin(p(MAPK1))
+                Cell: chondrocyte
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17373752
+=========================================================================
+
+_______________________________
+Evidence: C2-ceramide was found to inhibit the growth of Bel7402 cells by inducing cell cycle arrest. During the process, the expression of p21 protein increased, while that of cyclinD1, phospho-ERK1/2 and c-myc decreased. Furthermore, the level of CDK7 was downregulated, while the transcriptional activity of PPARgamma was upregulated. 
+
+       a(ceramide) DECREASES kin(p(MAPK1))
+                DigestiveSystem: Liver
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11145955
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       tscript(p(ESR1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+_______________________________
+Evidence: The results showed that transcriptional activation of the SRE by E2 was due to ERalpha activation of the MAPK pathway...The role of ERalpha  expression in mediating increased reporter gene activity was further investigated and shown to be related to enhanced ERK1/2 activation...in cells transfected with pSS and ERalpha  or HE11 (DNA binding domain deletion), E2 induced CAT activity; similar results were observed for CHO cells using pSRE (Fig. 3E), suggesting that this kinase-dependent response is not associated with nuclear ERalpha  action. 
+
+       complex(a(estradiol),p(ESR1)) INCREASES kin(p(MAPK1))
+                CellLine: MCF7
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15557124
+=========================================================================
+
+_______________________________
+Evidence: Furthermore, we found that melanoma cell integrin alphav was required for MAPK kinase (MEK) 1 and extracellular signal-regulated kinase (ERK)1/2 activity in 3D-collagen
+
+       p(ITGAV) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16579726
+=========================================================================
+
+_______________________________
+Evidence: Taurine-induced changes in the expression profiles of HepG2 cells were assessed using a cDNA microarray technology, and confirmed by real-time reverse transcription-polymerase chain reaction (RT-PCR) analyses. Of 8,298 human genes on the microarray, 128 genes (87 known genes) were up-regulated, and 349 (206 known genes) were down-regulated more than 2.0-fold by taurine. Among the 293 known genes regulated by taurine, a total of 44 genes were involved in signal transduction; 16 genes were up-regulated greater than 2.0-fold, and 28 genes were down-regulated more than 2.0-fold by taurine. The results of RT-PCR analyses for the five genes selected were consistent with our microarray data, although the fold changes in the expression level differed somewhat between the two analytical methods. Among signal transduction-related genes affected by taurine, four genes--mitogen-activated protein kinase (MAPK) kinase kinase 7, p21-activated kinase 4, sprouty homolog 2, and MAPK kinase 1--are implicated in the MAPK signaling pathway. Taurine also regulated the expression of signal transducer and activator of transcription (STAT) 3 gene involved in the Janus kinase-STAT pathway, and diacylglycerol kinase, zeta 104 kDa, the downstream mediator of the protein kinase C transmembrane signaling pathway. In conclusion, gene expression profiling of HepG2 cells treated with taurine provided us with new insights into the novel aspects of taurine as a possible regulator of MAPK signaling cascades and protein kinase C signaling pathways involved in cellular processes such as cell growth, differentiation, and apoptosis.
+
+       a(taurine) INCREASES r(MAP2K1)
+                CellLine: HepG2 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12515720
+=========================================================================
+
+_______________________________
+Evidence: ERK phosphorylation that was constitutive in mutant
+ras MM cells was completely abolished by the MEK inhibitor
+PD98059 (Figure 2C, left panels), as was the ERK phosphorylation
+reinduced in wild-type cells by readdition of IL-6 (Figure 2C, right
+panel).......In addition, re-exposure to IL-6
+could reinduce AKT phosphorylation in wild-type cells in a
+wortmannin-sensitive fashion. Moreover, the constitutively maintained
+AKT phosphorylation in the mutation-containing cells was
+also sensitive to wortmannin. These data indicate the PI3-K/AKT
+cascade is a ras effector in these mutant ras–containing MM cells.
+
+       p(KRAS,sub(G,12,V)) INCREASES kin(p(MAPK1))
+                CellLine: ANBL-6 cell line
+                Species: 9606
+       p(NRAS,sub(Q,61,R)) INCREASES kin(p(AKT1))
+                CellLine: ANBL-6 cell line
+                Species: 9606
+       p(NRAS,sub(Q,61,R)) INCREASES kin(p(MAPK1))
+                CellLine: ANBL-6 cell line
+                Species: 9606
+_______________________________
+Evidence: To test whether p70 phosphorylation is mediated by mTOR, we used the mTOR inhibitor rapamycin. As shown (Figure 4C), it inhibited phosphorylation at Thr389 as well as Thr421/Ser424, indicating that ras-dependent ERK and/or PI3-K-induced signaling must flow through mTOR for p70S6K phosphorylation.
+
+       p(NRAS,sub(Q,61,R)) INCREASES p(RPS6KB1,pmod(P,T,412))
+                CellLine: ANBL-6 cell line
+                Species: 9606
+       p(KRAS,sub(G,12,V)) INCREASES p(RPS6KB1,pmod(P,T,444))
+                CellLine: ANBL-6 cell line
+                Species: 9606
+       p(NRAS,sub(Q,61,R)) INCREASES p(RPS6KB1,pmod(P,S,447))
+                CellLine: ANBL-6 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12244094
+=========================================================================
+
+_______________________________
+Evidence: Summary: Raf-1 is a MAP kinase kinase kinase (MAP3K) which functions downstream of the Ras family of membrane associated GTPases to which it binds directly. Once activated Raf-1 can phosphorylate to activate the dual specificity protein kinases MEK1 and MEK2 which in turn phosphorylate to activate the serine/threonine specific protein kinases ERK1 and ERK2. Activated ERKs are pleiotropic effectors of cell physiology and play an important role in the control of gene expression involved in the cell division cycle, apoptosis, cell differentiation and cell migration.
+
+       p(RAF1,pmod(P,Y,441)) INCREASES kin(p(MAP2K1))
+                Species: 9606
+       p(RAF1,pmod(P,Y,441)) INCREASES kin(p(MAP2K2))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10196213
+=========================================================================
+
+_______________________________
+Evidence: activation of p42/p44 MAP kinase by endogenous epidermal growth factor, lysophosphatidic acid, and beta2-adrenergic receptors
+
+       cat(p(ADRB2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+       a(lysophosphatidic acid) INCREASES kin(p(MAPK1))
+                Species: 9606
+_______________________________
+Evidence: alpha2-AR-mediated activation of either endogenous or cotransfected p42/p44 mitogen-activated protein (MAP) kinase
+
+       cat(p(ADRA2 Family)) INCREASES kin(p(MAPK1))
+                Species: 9606
+       cat(p(ADRA2B)) INCREASES kin(p(MAPK1))
+                Species: 9606
+       cat(p(ADRA2A)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16890200
+=========================================================================
+
+_______________________________
+Evidence: The redox-dependent enhancement of Grb2 recruitment to LMW-PTP ultimately leads to an improvement of ERK activation, likely triggering a prosurvival signal against the oxidant environment.
+
+       complex(p(ACP1),p(GRB2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16573649
+=========================================================================
+
+_______________________________
+Evidence: These results imply that FRS2 and Shp2 are in a BDNF signaling pathway. Shp2 is required for complete MAPK activation by BDNF, as expression of a dominant negative Shp2 in cells attenuates BDNF-induced activation of MAPK. Moreover, expression of a dominant negative Shp2 attenuates Ras activation showing that the protein tyrosine phosphatase is required for complete activation of MAPKs by BDNF. In conclusion, Shp2 regulates BDNF signaling through the MAPK pathway by regulating either Ras directly or alternatively, by signaling components upstream of Ras.
+
+       p(NTRK2) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15590693
+=========================================================================
+
+_______________________________
+Evidence: Blocking Dex-induced MKP-1 induction using small interfering RNA increased ERK1/2 and JNK phosphorylation and decreased cell survival.
+
+       p(DUSP1) INCREASES p(MAPK1,pmod(P))
+                CellLine: MDA-MB-231 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11682632
+=========================================================================
+
+_______________________________
+Evidence: their expression is up-regulated by the activation of leukemia inhibitory factor receptor (LIF-R) and prostacyclin receptor (IP-R) via the extracellular signal-regulated kinase (ERK) pathway and cAMP production, respectively.
+
+       cat(p(PTGIR)) INCREASES kin(p(MAPK1))
+                Cell: preadipocyte
+                Species: 9606
+       cat(p(LIFR)) INCREASES kin(p(MAPK1))
+                Cell: preadipocyte
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11375353
+=========================================================================
+
+_______________________________
+Evidence: CML-modified albumin produced rapid transient activation of tyrosine phosphorylation, extracellular signal-regulated kinase 1 and 2, and p38 mitogen-activated protein kinase (MAPK)
+
+       cat(p(AGER)) INCREASES kin(p(MAPK1))
+                Cell: Monocytes
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16141331
+=========================================================================
+
+_______________________________
+Evidence: Both the growth-stimulating activity of low-dose NO for endothelial cells and suppression of TSP1 expression were ERK-dependent. Conversely, exogenous TSP1 suppressed NO-mediated pERK
+
+       p(THBS1) DECREASES kin(p(MAPK1))
+                Tissue: Endothelium
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11018025
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       a(Calcium) INCREASES p(BRAF)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9693360
+=========================================================================
+
+_______________________________
+Evidence: Human umbilical vein endothelial cells (HUVEC) when allowed to adhere to dishes coated with fibronectin for 3 hours prior to stimulation by G protein-coupled receptor agonist, bombesin (10 nM, 5 minutes) resulted in anchorage dependent activation of MAPK. HUVECs predominantly activate the p42 form of MAPK upon mitogen stimulation under adherence conditions.
+
+       p(2922) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14557365
+=========================================================================
+
+_______________________________
+Evidence: H-rasV12?
+transduced VSMCs became flat and enlarged in morphology,
+a characteristic of the senescent phenotype, and were apparently
+growth arrested by day 3, whereas mock-infected
+VSMCs exhibited normal morphology and growth (Figures
+1A and 2A) ... Whereas only a little SA--gal activity was found in mock-infected injured arteries, transduction of AdenoRas into injured arteries increased SA--gal activity (Figure 3A, left). Immunohistochemical analyses indicated that these SA--gal?positive cells were VSMCs in the outer layer of the intima and the media (Figure 3A, right), which suggests that activation of Ras induced VSMC senescence in vivo as well. 
+
+       p(HRAS,sub(G,12,V)) DECREASES bp(cell growth)
+                Cell: Myocytes, Smooth Muscle
+                Tissue: vascular tissue
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16803888
+=========================================================================
+
+_______________________________
+Evidence: In addition, we found that Rheb inhibits the association of B-Raf with H-Ras.
+
+       complex(p(BRAF),p(HRAS)) INCREASES (reifiedEdge: 182310)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12682293
+=========================================================================
+
+_______________________________
+Evidence: human endostatin binding to alpha 5 beta 1 integrin leads to the inhibition of focal adhesion kinase/c-Raf/MEK1/2/p38/ERK1 mitogen-activated protein kinase pathway
+
+       kin(p(PTK2)) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10827000
+=========================================================================
+
+_______________________________
+Evidence: insulin significantly increased MAP kinase [isoforms p42(MAPK) and p44(MAPK) (ERK1 and ERK2)] phosphorylation and activity, and the activity of its upstream activator MEK1. Insulin also increased the activity of the MAP kinase downstream substrate, the p90 ribosomal S6 kinase 2 (RSK2) almost twofold
+
+       a(serum insulin) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15057874
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(KRAS) INCREASES p(ITGA1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12475887
+=========================================================================
+
+_______________________________
+Evidence: BTC induced ERK1/2 and Akt phosphorylation in a dose- and time-dependent manner. BTC induced phosphorylation of all three EGF receptors present on HUVECs: ErbB2, ErbB3, and ErbB4.  Antibodies for phospho-specific ERK1/2 (Thr202/Tyr204) and phospho-specific Akt (Ser473) were purchased form New England Biolabs (Beverly, MA).
+
+       p(BTC) INCREASES p(MAPK1,pmod(P,Y))
+                CellLine: HUVEC cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12048245
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(IFNG) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11252954
+=========================================================================
+
+_______________________________
+Evidence: Figure 1 | The ErbB signalling network.
+
+       gtp_bound_activity(p(NRAS)) DIRECTLY_INCREASES kin(p(ARAF))
+                Species: 9606
+       cat(p(SOS1)) DIRECTLY_INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18495523
+=========================================================================
+
+_______________________________
+Evidence: The mitogenic effects of nicotine resulted in enhanced recruitment
+of E2F1 and Raf-1 causing dissociation of Rb from these
+promoters...[90].  
+
+       complex(p(RAF1),p(RB1)) INCREASES bp(cell proliferation)
+                CellLine: A549
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12356731
+=========================================================================
+
+_______________________________
+Evidence: In turn, IEX-1 potentiates ERK activation
+
+       p(IER3,pmod(P)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17052212
+=========================================================================
+
+_______________________________
+Evidence: This binding is translated in vivo into the rapid recruitment of CAPRI and RASAL from the cytosol to the plasma membrane following receptor-mediated increases in [Ca2+]i. Importantly, this membrane association leads to an increase in the catalytic activity of both proteins. So, both CAPRI and RASAL constitute calcium-activated Ras-GAPs that inactivate Ras at the plasma membrane
+
+       translocation(p(RASAL1),GOCCACC:GO:0005737,GOCCACC:GO:0005886) DIRECTLY_DECREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+       translocation(p(RASA4),GOCCACC:GO:0005737,GOCCACC:GO:0005886) DIRECTLY_DECREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+_______________________________
+Evidence: GAP1m, GAP1IP4BP, CAPRI (Ca2+-promoted Ras inactivator) and RASAL (Ras-GTPase-activating-like protein) [5Ã¢â‚¬â€œ8]. Each protein has a basic conserved domain architecture, although subtle variations in the function of each domain have pronounced effects on the regulation of each protein. GAP1 family members contain a centrally located Ras-GAP domain. This is the conserved region found in all Ras-GAPs that contains the catalytic machinery required to enhance the intrinsic GTPase activity of Ras [2]. 
+
+       cat(p(RASA2)) DIRECTLY_INCREASES gtp_bound_activity(p(NRAS))
+                Species: 9606
+       cat(p(RASA3)) DIRECTLY_INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+_______________________________
+Evidence: Thus, while p120 and NF1 (neurofibromatosis-related protein 1) are clearly Ras-specific and do not enhance the catalytic activity of Rap,
+RASA1 (p120-RASGAP)
+
+       cat(p(NF1)) DIRECTLY_INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+       cat(p(RASA1)) DIRECTLY_INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+_______________________________
+Evidence: GAP1m, GAP1IP4BP, CAPRI (Ca2+-promoted Ras inactivator) and RASAL (Ras-GTPase-activating-like protein) [5ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“8]. Each protein has a basic conserved domain architecture, although subtle variations in the function of each domain have pronounced effects on the regulation of each protein. GAP1 family members contain a centrally located Ras-GAP domain. This is the conserved region found in all Ras-GAPs that contains the catalytic machinery required to enhance the intrinsic GTPase activity of Ras [2]. 
+
+       cat(p(RASAL1)) DIRECTLY_DECREASES gtp_bound_activity(p(NRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11839576
+=========================================================================
+
+_______________________________
+Evidence: MCP-1 protein expression induced by IFN-gamma and CD40L (24 hours) was significantly decreased by the ERK1/2 MAPK pathway inhibitor, U0126. U0126 treatment at 10 micromol/L significantly reduced IFN- gamma and CD40L-induced MCP-1 protein production, bringing the levels of MCP-1 to baseline.
+
+       p(CD40LG) INCREASES p(MAPK1)
+                Species: 9606
+_______________________________
+Evidence: Treatment of cells with IFN-gamma and CD40L induced the phosphorylation of ERK2 after 10 min of stimulation. Pretreatment with PD98059 (MAPK inhibitor) at 30 micro mol/L abrogated this induction.
+
+       p(CD40) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10551874
+=========================================================================
+
+_______________________________
+Evidence: Activation of MAP kinase by phorbol ester treatment caused a 3-5-fold reduction in apoCIII transcription
+
+       a(Tetradecanoylphorbol acetate) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11290748
+=========================================================================
+
+_______________________________
+Evidence: Grx2 significantly activated the Ras/phosphoinositide 3-kinase/Akt/NF-kappaB cascade in parallel to the Jun N-terminal kinase (JNK)/AP1 cascade.
+
+       cat(p(GLRX2)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15059917
+=========================================================================
+
+_______________________________
+Evidence: MAPK1 and MAPK3 were activated in cells expressing ERBB2.
+
+       p(ERBB2) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15304097
+=========================================================================
+
+_______________________________
+Evidence: Cholesterol has been recently suggested to regulate the early steps of keratinocyte differentiation through lipid rafts. In many cell types, depletion of cholesterol activates signaling proteins like epidermal growth factor receptor (EGFR), human epidermal growth factor receptor 2 (HER2), or extracellular signal-regulated kinase (ERK) known to affect cell differentiation
+
+       a(cholesterol) DECREASES kin(p(MAPK1))
+                Cell: Keratinocytes
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11823472
+=========================================================================
+
+_______________________________
+Evidence: Disruption of endogenous heat shock protein 90 (hsp90) function with geldanamycin abrogated BCR-induced cyclin D2 expression and proliferation. Geldanamycin effects were attributed to a selective depletion of cellular Raf-1 that interrupted BCR-coupled activation of MEK1/2 and ERK. 
+
+       complex(B-cell receptor complex) INCREASES kin(p(MAPK1))
+                Cell: b-cell
+                Species: 9606
+       cat(p(HSP90 Family)) INCREASES p(RAF1)
+                Cell: b-cell
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12551925
+=========================================================================
+
+_______________________________
+Evidence: Protein kinase C (PKC) regulates activation of the Raf-1 signaling cascade by growth factors, but the mechanism by which this occurs has not been elucidated. Here we report that one mechanism involves dissociation of Raf kinase inhibitory protein (RKIP) from Raf-1. Classic and atypical but not novel PKC isoforms phosphorylate RKIP at serine 153 (Ser-153). RKIP Ser-153 phosphorylation by PKC either in vitro or in response to 12-O-tetradecanoylphorbol-13-acetate or epidermal growth factor causes release of RKIP from Raf-1
+
+       complex(p(PEBP1),p(RAF1)) DIRECTLY_DECREASES (reifiedEdge: 89676)
+                Species: 9606
+       complex(p(PEBP1),p(RAF1)) DIRECTLY_DECREASES (reifiedEdge: 89672)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16024629
+=========================================================================
+
+_______________________________
+Evidence: Consistent with our
+findings using PKC inhibition by Ro-31-8425, blocking the EP1
+receptors by AH6809 notably suppressed the PGE2-dependent Erk
+phosphorylation (Fig. 5B).  
+
+       a(Dinoprostone) INCREASES p(MAPK1,pmod(P,T,185))
+                CellLine: H157 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12374781
+=========================================================================
+
+_______________________________
+Evidence: Expression of mRNA for the A2a-, A2b-adenosine receptor subtypes was abundant whereas A1-adenosine receptor mRNA levels were negligible. Activation of A2a purinoceptors by adenosine (10 microM) or the A2a receptor agonist CGS21680 (100 nM) resulted in an increase in l-arginine transport and NO release that was not mediated by changes in intracellular Ca2+, pH, or cAMP.
+
+       cat(p(ADORA2B)) INCREASES kin(p(MAP2K1))
+                Tissue: Endothelium
+                Species: 9606
+_______________________________
+Evidence: Inhibition of protein tyrosine kinases and MAPK kinase (MEK1/2, upstream activator of p42/44MAPK) abolished A2a purinoceptor-stimulated increases in L-arginine transport, NO production, and p42/44MAPK phosphorylation.
+
+       a(adenosine) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15020686
+=========================================================================
+
+_______________________________
+Evidence: We show that in the human breast carcinoma T47D cells, upon estrogen treatment, p130Cas rapidly and transiently associates with the estrogen receptor alpha in a multi-molecular complex containing the c-Src kinase and the p85 subunit of PI 3-kinase. Association of p130Cas with the estrogen receptor alpha occurs within 3 minutes of estrogen treatment and is dependent on c-Src kinase activation. Transient overexpression of p130Cas in T47D cells increases estrogen-dependent Src kinase and Erk1/2 MAPKs activities and accelerates their kinetics of stimulation.
+
+       p(BCAR1) INCREASES kin(p(MAPK1))
+                CellLine: T47D cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12020765
+=========================================================================
+
+_______________________________
+Evidence: The ability of SOCS-3 expression to inhibit leptin-stimulated phosphorylation of JAK2 and ERK suggests a role for SOCS-3 as a mediator of negative feedback control on proximal leptin signalling events
+
+       a(serum leptin) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11692108
+=========================================================================
+
+_______________________________
+Evidence: In addition, preincubation of the cells with an
+MEK inhibitor, PD98059 (10 ?mol/L), diminished the
+activation of ERK1/2 in PBECs, and preincubation with
+0.1% DMSO did not affect the phosphorylation of
+ERK1/2 (Fig 2, B).
+
+       p(IL17A) INCREASES p(MAPK1,pmod(P,T))
+                Cell: bronchial epithelial cell
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15866871
+=========================================================================
+
+_______________________________
+Evidence: We show that down-regulation of PTP1B activity with small molecule inhibitors suppresses cell spreading and migration to fibronectin, increases Tyr(527) phosphorylation in Src, and decreases phosphorylation of FAK, p130(Cas), and ERK1/2.
+
+       phosphatase_activity(p(PTPN1)) INCREASES p(MAPK1,pmod(P,Y))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12476301
+=========================================================================
+
+_______________________________
+Evidence: In brief, p210BCR/ABL activates signal transduction pathways such as RAS/MAPK, PI-3 kinase, c-CBL and CRKL pathways, JAK-STAT and the Src pathway. Of these, the ras, Jun-kinase, and PI-3 kinase pathways have been demonstrated to play a major role in transformation and proliferation (Raitano et al., 1995; Sawyers et al., 1995; Skorski et al., 1995, 1997a). Inhibition of apoptosis is thought to result from activation of the PI-3 kinase and RAS pathways, with induction through AKT of c-myc and BCL-2 (Raitano et al., 1995; Sawyers et al., 1995; Skorski et al., 1995, 1997a; Warmuth et al., 1999)
+
+       kin(p(BCR,fusion(ABL1))) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12654259
+=========================================================================
+
+_______________________________
+Evidence: When the Bcl-2 oncogene which mediates inhibition of apoptosis [52], was transfected into tumor cells, tumor cell apoptosis decreased and VEGF expression increased significantly [48]. In another study, human osteosarcoma cells implanted in mice formed only microscopic avascular, dormant tumors, in which tumor cell proliferation was balanced by tumor cell apoptosis. When these cells were transfected with the ras oncogene, VEGF expression doubled, expression of thrombospondin decreased significantly, and large neovascularized tumors grew within approximately 2 weeks [7]. Thus, targeting oncogene products not only affects cancer cell proliferation and cell death, but also disrupts production of angiogenic factors. These studies predict that certain anti-cancer drugs developed for their capacity to block an oncogene product (for example, inhibitors of the EGF receptor tyrosine kinase), may have significant antiangiogenic activity [12,53,54]. For example, ras farnesyl transferase inhibitors block oncogene signaling pathways which up-regulate tumor cell production of VEGF and down-regulate production of the angiogenesis inhibitor, thrombospondin-1 [47].
+
+       p(HRAS) DECREASES p(THBS1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18267069
+=========================================================================
+
+_______________________________
+Evidence: Figure 4A shows that addition of rIGFBP7 resulted in a dose-dependent loss of phospho-ERK. 
+
+       p(IGFBP7) DECREASES p(MAPK1,pmod(P))
+                CellLine: SK-MEL-28 cell line
+                Species: 9606
+_______________________________
+Evidence: Following expression of BRAFV600E in melanocytes, the majority of cells became senescent (Figure 1D and data not shown), consistent with previous studies (Michaloglou et al., 2005)
+
+       p(BRAF,sub(V,600,E)) INCREASES path(Oncogene induced senescence)
+                Cell: melanocyte
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16810323
+=========================================================================
+
+_______________________________
+Evidence: Here we show that these effects are mediated through the formation of a specific multiprotein complex comprising B-Raf, PKCepsilon and S6K2.
+
+       complex(p(BRAF),p(PRKCE),p(RPS6KB2)) DIRECTLY_INCREASES kin(p(PRKCE))
+                Disease: Lung Neoplasms
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11902584
+=========================================================================
+
+_______________________________
+Evidence: increases protein - ligands of other receptors (thrombin, angiotensin), RAS expression, small G-protein RAC1, PTEN inhibition, diacyl glycerol kinase
+
+       p(HRAS) INCREASES p(HIF1A)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17667909
+=========================================================================
+
+_______________________________
+Evidence: Figure 6A
+
+       kin(p(MET)) INCREASES p(MAPK1,pmod(P,Y,204))
+                CellLine: NCI-H69 cell line
+                Species: 9606
+_______________________________
+Evidence: In c-MET-overexpressing SCLC cell line NCI-H69, hepatocyte growth factor (HGF) dramatically induced c-MET phosphorylation at phosphoepitopes pY1230/1234/1235 (catalytic tyrosine kinase), pY1003 (juxtamembrane), and also of paxillin at pY31 (CRKL-binding site). We utilised a global proteomics phosphoantibody array approach to identify further c-MET/HGF signal transduction intermediates in SCLC. Strong HGF induction of specific phosphorylation sites in phosphoproteins involved in c-MET/HGF signal transduction was detected, namely adducin-alpha [S724], adducin-gamma [S662], CREB [S133], ERK1 [T185/Y187], ERK1/2 [T202/Y204], ERK2 [T185/Y187], MAPKK (MEK) 1/2 [S221/S225], MAPKK (MEK) 3/6 [S189/S207], RB [S612], RB1 [S780], JNK [T183/Y185], STAT3 [S727], focal adhesion kinase (FAK) [Y576/S722/S910], p38alpha-MAPK [T180/Y182], and AKT1[S473] and [T308]. Conversely, we also identified modest inhibition of phosphorylation
+by HGF in the following phosphoproteins (Figures 2A and
+B): PKCa [S657], PKCa/b [T368/641], and PKCd [T505]. Moreover,
+HGF also inhibited phosphorylation of PKR [T451], which is
+known to have antiproliferative and pro-apoptotic functions.
+Lastly, HGF also reduced the threonine and tyrosine phosphorylation
+of the cell cycle checkpoint regulator CDK1 [T14/Y15].
+
+       p(HGF) INCREASES p(MAP2K1,pmod(P,S,225))
+                CellLine: NCI-H69 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11244499
+=========================================================================
+
+_______________________________
+Evidence: Furthermore, elevated serum-induced extracellular responsive kinase (ERK) activation was observed in p97Eps8 overexpressors. This enhanced ERK activation was sensitive to a MEK1 specific inhibitor PD98059 and was important for p97Eps8-mediated transformation, since transfection of vectors expressing dominant negative MEK1 and p97Eps8 abrogated focus formation by p97Eps8
+
+       p(EPS8) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15867790
+=========================================================================
+
+_______________________________
+Evidence: Table 1 - Lists of differentially expressed genes during ischemia and reperfusion identified with SAM, as described in the text
+
+       path(Ischemia) DECREASES r(MAPK1)
+                Cell: cardiomyocyte
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15093720
+=========================================================================
+
+_______________________________
+Evidence: Leptin stimulates MAPK 1 and MAPK 2 phosphorylation in a time dependent manner with a maximal activation detected at 5 min, then this activation greatly diminishes. PD98059, an inhibitor of MAPK1 and MAPK2 totally inhibits the leptin induced cell proliferation.
+
+       p(LEP) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12538652
+=========================================================================
+
+_______________________________
+Evidence: forced expression of Smad7 abolished TGF-beta1 induction of p38 activation and, as shown earlier, BGN mRNA expression
+
+       p(TGFB1) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16597638
+=========================================================================
+
+_______________________________
+Evidence: In this study, concentrations of Delta9-THC equivalent to those found in the serum of cannabis users, i.e. approximately 20 microM, inhibited proliferation
+
+       a(Dronabinol) INCREASES r(HRAS)
+                CellLine: BEWO cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19251840
+=========================================================================
+
+_______________________________
+Evidence: 
+Human ASM cells exposed to the primary proasthmatic T helper type 2 (Th2) cytokine, IL-13, exhibited upregulated expression of 11beta-HSD1, an effect that was attributed to activation of the transcription factor, AP-1, coupled to MAPK signaling via the ERK1/2 and JNK pathways.
+
+       p(IL13) INCREASES kin(p(MAPK1))
+                Tissue: Muscle, Smooth
+                BodyRegion: airway
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12606502
+=========================================================================
+
+_______________________________
+Evidence: Maximal insulin stimulation increased the phosphorylation of Erk 1/2 and JNK in healthy control subjects but not type 2 diabetic patients.
+
+       p(3630) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10811819
+=========================================================================
+
+_______________________________
+Evidence: Oncogenic Ras decreases Rac activity through sustained Raf/MAP kinase signaling, which causes transcriptional downregulation of Tiam1, an activator of Rac in epithelial cells.
+
+       p(HRAS) DECREASES gtp_bound_activity(p(RAC Family))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11687581
+=========================================================================
+
+_______________________________
+Evidence: PPAR gamma agonists 15-d-PGJ2 and thiazolidinediones such as pioglitazone and troglitazone elicited rapid activation of ERK within 15 min and induced c-fos mRNA expression within 30 min
+
+       tscript(p(PPARG)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12878172
+=========================================================================
+
+_______________________________
+Evidence: Expression of MMP13 RNA and protein was suppressed by U0126, a potent inhibitor of ERK. Depletion of ERK1 and ERK2 by transient transfection of antisense phosphorothioate oligodeoxynucleotide (ODN) resulted in drastic decline in MMP13 protein induction by TNF.
+
+       p(MAPK1) INCREASES p(MMP13)
+                Cell: chondrocyte
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15713673
+=========================================================================
+
+_______________________________
+Evidence: SSB-1 also enhanced HGF-induced Erk phosphorylation
+
+       p(SPSB1) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10873157
+=========================================================================
+
+_______________________________
+Evidence: TNF alpha, IFN gamma and IL1 beta induced the tyrosine and threonine phosphorylation of ERK MAP kinases. Treatment with PD98059, an inhibitor of MEK1 and MEK2 kinase inhibited ERK MAP kinase phosphorylation by IFN gamma, TNF alpha and IL1 beta.
+
+       p(TNF) INCREASES p(MAP2K2)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11956106
+=========================================================================
+
+_______________________________
+Evidence: Coimmunoprecipitation experiments showed that PKC epsilon remained constitutively associated with phospho raf1 in both quiescent LNCaP cells and the AI-LNCaP/epsilon cells that continued to proliferate after three days. However general levels of RAF1 phosphorylation remained elevated.
+
+       p(PRKCE) INCREASES p(RAF1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12052868
+=========================================================================
+
+_______________________________
+Evidence: Cell attachment to fibronectin through ITGA5.ITGB1 activated the phosphorylation of ERK-2 within 60 minutes. ERK-2 activation was detected even in the presence of dn Cdc42 or dn Rac1 after attachment to fibronectin, indicating that these integrin-induced signaling components are still activated by attachment when Cdc42 and Rac1 are blocked.
+
+       complex(p(ITGA5),p(ITGB1)) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+_______________________________
+Evidence: Cell attachment to fibronectin through ITGAV.ITGB3 activated the phosphorylation of ERK-2 within 60 minutes. ERK-2 activation was detected even in the presence of dn Cdc42 or dn Rac1 after attachment to fibronectin, indicating that these integrin-induced signaling components are still activated by attachment when Cdc42 and Rac1 are blocked.
+
+       complex(p(ITGAV),p(ITGB3)) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+_______________________________
+Evidence: Cells incubated for 15 min with immobilized TSP1 (50 micro gram/ml) resulted in significant ERK phosphorylation. CD3 Ab strongly and reproducibly enhanced the phosphorylation induced by TSP1 or TSP1 peptides 246 and 7N3. Addition of the beta-1 integrin-blocking Ab mAb13, inhibited the ERK phosphorylation stimulated by TSP1.
+
+       p(ITGB1) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14715700
+=========================================================================
+
+_______________________________
+Evidence: Many angiogenic growth factors, including bFGF and VEGF, stimulate endothelial cell invasion (51) through transmembrane protein kinase receptor dimerization and phosphorylation (11, 53), leading to the activation of phospholipase Cg (PLCg) and Ras, both of which ultimately result in activation of cPLA2
+
+       p(FGF2) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+_______________________________
+Evidence: In human colon carcinoma cells, exogenous addition of PAF inhibited proliferation while concomitantly activating Erk, Mek, and Jun N-terminal kinases
+
+       cat(p(PTAFR)) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11353767
+=========================================================================
+
+_______________________________
+Evidence: IFNA induced activation of MAPK1.
+
+       p(IFNA1) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18268536
+=========================================================================
+
+_______________________________
+Evidence: In
+human HaCaT keratinocytes for instance,
+ERK1/2 phosphorylation increases
+in dependence of EGF-R
+recruitment to transadhering E-cadherin,
+and E-cadherin-mediated activation of MAPK was also reported in intestinal
+epithelial cells (Pece and Gutkind,
+2000; Laprise et al., 2004). 
+ 
+
+
+       p(CDH1) INCREASES kin(p(MAPK1))
+                Cell: Epithelial Cells
+                BodyRegion: intestine
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12869389
+=========================================================================
+
+_______________________________
+Evidence: In contrast, AR, a specific ErbB1 ligand, induced sustained ERK1/2 and Elk1 phosphorylation, increased cyclin D1 mRNA and protein, and increased DNA synthesis activity.
+
+       p(AREG) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16679305
+=========================================================================
+
+_______________________________
+Evidence: Finally, the higher growth rate of the K12V tumors associates with enhanced Rb phosphorylation, and PCNA and cyclin B upregulation, consistent with faster G1/S and G2/M transitions, without alteration of apoptotic regulation.
+
+       p(KRAS,sub(G,12,V)) INCREASES p(RB1,pmod(P))
+                Species: 9606
+_______________________________
+Evidence: Unexpectedly, in tumors induced by the K12D oncogene, the K-Ras mutant protein does not interact with Raf-1 nor activates the Erk canonical pathway. Instead, it transduces signals through the PI3K/Akt, JNK, p38 and FAK pathways.
+
+       p(KRAS,sub(G,12,D)) INCREASES kin(p(MAPK8))
+                Species: 9606
+       p(KRAS,sub(G,12,D)) INCREASES kin(p(MAPK JNK Family))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17157787
+=========================================================================
+
+_______________________________
+Evidence: Raf significantly increased the protein levels of p120RasGAP
+within 24–72 hr (Figure 4B).
+
+       p(RAF1) INCREASES p(RASA1)
+                Cell: Fibroblasts
+                Species: 9606
+_______________________________
+Evidence: Raf-expressing cells as a means of identifying potential
+candidate genes... Figures 4C - Transcriptional response to oncogenic raf. Figure 4D - change protein levels of some of the target genes
+
+       p(RAF1) DECREASES p(RASGRP1)
+                Cell: Fibroblasts
+                Species: 9606
+       p(RAF1) INCREASES p(SPRY2)
+                Cell: Fibroblasts
+                Species: 9606
+       p(RAF1) INCREASES p(RASA3)
+                Cell: Fibroblasts
+                Species: 9606
+_______________________________
+Evidence: Strikingly, Raf activation
+triggered the activation of FOXO proteins with the same rapid
+kinetics (48 hr) observed for the suppression of PI3K/AKT (Figure
+6C).
+
+       p(RAF1) INCREASES p(FOXO3)
+                Cell: Fibroblasts
+                Species: 9606
+       p(RAF1) INCREASES p(FOXO1)
+                Cell: Fibroblasts
+                Species: 9606
+_______________________________
+Evidence: in response to an inducible
+Raf allele, the PI3K/AKT pathway was completely suppressed
+within 48–72 hr in BJ cells, while ERK activity was reduced but
+was never completely inactivated (Figure 5A).
+
+       p(RAF1) DECREASES p(AKT Family,pmod(P))
+                Cell: Fibroblasts
+                Species: 9606
+_______________________________
+Evidence: IMR90 and BJ fibroblasts were infected with a retrovirus
+that expresses the catalytic GAP-related domain (GRD) of neurofibromin.
+Expression of this domain has previously been
+shown to decrease Ras-GTP levels (Hiatt et al., 2001; Johannessen
+et al., 2005). Consistent with these findings, GRD expression
+resulted in a significant decrease in the activation of AKT
+and ERK (Figure 3D) and induced senescence in both IMR90
+and BJ cells (Figure 3E)
+
+       p(NF1) DECREASES kin(p(MAPK1))
+                Cell: Fibroblasts
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16948396
+=========================================================================
+
+_______________________________
+Evidence: Cytokines increased phosphorylation of ERK and c-Jun NH2-terminal kinase (JNK) in RINm5F and MIN6 cells but had no effect on p38 kinase phosphorylation.
+
+       p(IL1B) INCREASES p(MAPK1,pmod(P))
+                CellLine: MIN6 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17016520
+=========================================================================
+
+_______________________________
+Evidence: To address this problem, we use quantitative mass spectrometry to analyze dynamic effects of HER2 overexpression on phosphotyrosine signaling in human mammary epithelial cells stimulated by epidermal growth factor (EGF) or heregulin (HRG).        [This is from the 'Suplementary Table with Full Data Set" (http://www.nature.com/msb/journal/v2/n1/suppinfo/msb4100094_S1.html).  The cutoff used was a 2.5 fold or greater increase at any of the 5, 10 or 30 minute time points.]
+
+       p(NRG1) INCREASES p(MAPK1,pmod(P,T,185))
+                CellLine: HMEC cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16039990
+=========================================================================
+
+_______________________________
+Evidence: from Gene MAP3K3:       This gene product is a 626-amino acid polypeptide that is 96.5% identical to mouse Mekk3. Its catalytic domain is closely related to those of several other kinases, including mouse Mekk2, tobacco NPK, and yeast Ste11. Northern blot analysis revealed a   4.6-kb transcript that appears to be ubiquitously expressed. This protein directly regulates the stress-activated protein kinase (SAPK) and extracellular signal-regulated protein kinase (ERK) pathways by activating SEK and MEK1/2 respectively; it does not regulate the p38 pathway. In cotransfection assays, it enhanced transcription from a nuclear factor kappa-B (NFKB)-dependent reporter gene, consistent with a role in the SAPK pathway. Alternatively spliced transcript variants encoding distinct isoforms have been observed.
+
+       kin(p(MAP3K3)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:1709483
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(KRAS) INCREASES p(TGFA)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12370187
+=========================================================================
+
+_______________________________
+Evidence: Further analysis reveals that expression of beta-arrestin2 strengthened CXCR4-mediated activation of both p38 MAPK and ERK, and the suppression of beta-arrestin2 expression blocked the activation of two kinases
+
+       cat(p(CXCR4)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19531623
+=========================================================================
+
+_______________________________
+Evidence: Within 48 hours after transfection, cells
+transfected with pcDNA-K-Ras-G12V-2xMyc expressed higher
+levels of EphA2 than control cells did, and expression increased
+by >2.5-fold by 72 hours after transfection (Fig. 4A and B).
+
+       p(KRAS,sub(G,12,V)) INCREASES p(EPHA2)
+                CellLine: NCI-H322 cell line
+                Disease: Carcinoma, Non-Small-Cell Lung
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19601851
+=========================================================================
+
+_______________________________
+Evidence: Pretreatment of VSMC with IL-19
+results in a significant reduction in fetal calf stimulated p44/42 and p38 MAPK activation in cultured human VSMC
+[38]. It was found that this inhibition was mediated by
+SOCS5 interaction with these MAP kinases, suggesting that
+in other cell types, other interleukins could inhibit MAPKs
+by induction of SOCS proteins.
+
+       p(IL19) DECREASES kin(p(MAPK1))
+                Cell: Myocytes, Smooth Muscle
+                Tissue: vascular tissue
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12670961
+=========================================================================
+
+_______________________________
+Evidence: Our results further indicate that Gq/11 proteins specifically mediate KDR signaling such as intracellular Ca2+ mobilization rather than Flt-1-induced CDC42 activation and that a Gq/11 antisense oligonucleotide completely inhibits MAPK phosphorylation induced by KDR but has no effect on Flt-1-induced MAPK activation.
+
+       gtp_bound_activity(p(GNAQ)) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12865932
+=========================================================================
+
+_______________________________
+Evidence: In vitro kinase assay, specific for p42/44 MAP kinase activity, showed approximately two-fold higher MAP kinase activity in WT and mock-transfected HCT-116 cell lines compared to AS cell lines. This shows that suppression of uPAR decreases activation of Erk MAP kinase in in HCT-116 cells. Same results were obtained using western blot.
+
+       p(PLAUR) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11207433
+=========================================================================
+
+_______________________________
+Evidence: In addition, our results demonstrate that the p42/p44 MAPK protein kinases are activated by hypoxia. 
+
+       bp(response to hypoxia) INCREASES kin(p(MAPK1))
+                CellLine: PC12 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10344756
+=========================================================================
+
+_______________________________
+Evidence: TPA induces phosphorylation of MEK1/2 on Ser-217/Ser-221 by PKC. TPA-induced phosphorylation of MEK1/2 is inhibited by PKC inhibitor H7, but not by GF109203X, which shows MEK activation depends on PKC isotype, which is distinct from that involved in SEK1-JNK activation in human colon cancer cells. Activated Ki-ras is not involved in MEK1/2-ERK pathway.
+
+       p(PRKC Family) INCREASES p(MAP2K2)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:8621729
+=========================================================================
+
+_______________________________
+Evidence: Activation of the mitogen-activated protein kinase cascade is a critical event in mitogenic growth factor signal transduction. Mitogen-activated protein kinase is directly activated by a dual specific kinase. Activation of MEK1 requires the phosphorylation of serine residues 218 and 222. The a-Raf activated by serum stimulation induced activation of MEK1, which is determined by the coupled kinase activity, and immunoprecipitation and yeast-two hybrid analysis showed that MEK1 is direct substrate of a-Raf.
+
+       p(ARAF) INCREASES p(MAP2K1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17405881
+=========================================================================
+
+_______________________________
+Evidence: ITSN-1 knockdown acts as a proapoptotic signal that causes mitochondrial outer membrane permeabilization, dissipation of the mitochondrial membrane potential, and generation of reactive oxygen species.These effects were secondary to decreased activation of Erk1/2 and its direct activator MEK. 
+
+       p(ITSN1) INCREASES kin(p(MAPK1))
+                Cell: Endothelial Cells
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16081426
+=========================================================================
+
+_______________________________
+Evidence: Activation of ERK1/2 and high ROS levels stabilize Ha-Ras protein, by inhibiting proteasomal degradation.
+
+       pep(p(Proteasome Complex)) DECREASES p(HRAS)
+                Species: 9606
+_______________________________
+Evidence: Induction of Ras proteins by PDGF in primary fibroblasts. Stimulation of the cells with PDGF for 15 min was sufficient to induce Ha-Ras protein, which decreased to the initial level, 120 min after stimulation, notwithstanding the presence of the growth factor. Ki-Ras protein levels were also stimulated by PDGF but less efficiently and with a different kinetics. 
+
+       p(PDGF Family) INCREASES p(KRAS)
+                Cell: Fibroblasts
+                Species: 9606
+_______________________________
+Evidence: To determine if ROS were involved in Ha-Ras induction by PDGF, we treated the cells with a nonspecific ROS scavenger (NAC) or NADPH oxidase inhibitor (DPI) and measured Ha-Ras levels in the presence or absence of PDGF. Fig. 2B shows that NAC and DPI significantly inhibited PDGF induced Ha-Ras levels. 
+
+       a(reactive oxygen species) INCREASES p(HRAS)
+                Cell: Fibroblasts
+                Species: 9606
+_______________________________
+Evidence: To this end, we employed 1) PD 98059 and U0126 (2 h and 15 min of incubation, respectively), which inhibit MEK (MAPKK); and 2) a dominant-negative MEK variant that inhibits cellular MEK (see "Materials and Methods"). The results, shown in Fig. 3, A-C, demonstrate that induction of Ha-Ras by H2O2 was abolished by MEK inhibition. 
+
+       a(hydrogen peroxide) INCREASES p(HRAS)
+                Cell: Fibroblasts
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15314064
+=========================================================================
+
+_______________________________
+Evidence: Keratin-bound Raf kinase is released upon Raf hyperphosphorylation and activation during oxidative and other stresses.
+
+       bp(response to stress) INCREASES p(RAF1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9858557
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       r(RAF1) INCREASES p(JUNB)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11403955
+=========================================================================
+
+_______________________________
+Evidence: % Differentiation of PC12 cells by nerve growth factor (NGF) or fibroblast growth factor-2 (FGF2) is dependent on signaling mediated by extracellular regulated kinase (ERK).
+
+       p(NGF) INCREASES p(MAPK1)
+                CellLine: PC12 cell line
+                Species: 9606
+       p(MAPK1) INCREASES bp(cell differentiation)
+                CellLine: PC12 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10446041
+=========================================================================
+
+_______________________________
+Evidence: FAK also combines with, and may activate, phosphoinositide 3-OH kinase (PI 3-kinase), either directly or through the Src kinase (13). Finally, there is evidence that Src phosphorylates FAK at Tyr925, creating a binding site for the complex of the adapter Grb2 and Ras guanosine 5'-triphosphate exchange factor mSOS (10). These interactions link FAK to signaling pathways that modify the cytoskeleton and activate mitogen-activated protein kinase (MAPK) cascades (Fig. 3A).
+
+       p(PTK2,pmod(P,Y,925)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9171350
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       cat(complex(p(ITGA6),p(ITGB4))) INCREASES kin(p(MAPK1))
+                Species: 9606
+       gtp_bound_activity(p(RHOA)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10531317
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       cat(p(ITGA3)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12646231
+=========================================================================
+
+_______________________________
+Evidence: We have examined the effect of MPD-mot-2 interactions on the level and activity of p21(Ras) and its downstream effectors, p44 and p42 MAP kinases (ERK1/ERK2), in Ras-Raf pathway. An overexpression of mot-2 resulted in reduced level of Ras and phosphorylated ERK2.
+
+       cat(p(MVD)) INCREASES p(HRAS)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10433554
+=========================================================================
+
+_______________________________
+Evidence: PMID 10620507 We found previously that protein kinase C-z (PKC-z) can phosphorylate and activate Raf-1 in a signalling complex. We report now that PKCz-Raf-1 interaction is mediated by 14-3-3 proteins in ?itro and in ?i?o. the results suggest that 14-3-3 binds both PKC-z (at phospho-Ser-186) and Raf-1 ina ternary complex. Complex formation was much stronger with a kinase-inactive PKC-z mutant than with wild-type PKC-z, supporting the idea that kinase activity leads to complex dissociation 14-3-3B and Q with its putative PKCz phosphorylation sites mutated enhanced co-precipitation between PKC-z and Raf-1, suggesting that phosphorylation of 14-3-3 by PKC-z weakens the complex in in vivo
+
+       complex(p(PRKCZ),p(RAF1),p(YWHAQ)) DIRECTLY_INCREASES kin(p(RAF1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12949261
+=========================================================================
+
+_______________________________
+Evidence: In parallel, stimulation of the wild-type angiotensin type 1A receptor with Ang II robustly stimulates ERK1/2 activation with approximately 60% of the response blocked by the PKC inhibitor (G protein dependent)
+
+       cat(p(AGTR1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10409724
+=========================================================================
+
+_______________________________
+Evidence: Signaling by the IL-6 receptor is mediated through the signal transducing subunit gp130 and involves the activation of Janus-associated kinases (JAKs), signal transducer and activator of transcription 3 (STAT3), and mitogen-activated protein (MAP) kinase. 
+
+       p(IL6R) INCREASES kin(p(MAPK1))
+                Species: 9606
+_______________________________
+Evidence: Insulin brought about phosphorylation of ERK1/2.
+
+       p(INS) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12606779
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       cat(p(APP)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14742319
+=========================================================================
+
+_______________________________
+Evidence: we found that exogenous Id-1 expression led to phosphorylation of Raf-1 and MEK1/2 kinases
+
+       p(ID1) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15655247
+=========================================================================
+
+_______________________________
+Evidence: we found that both ERK1 and ERK2 were expressed in SK-OV-3.ipl cells incubated under various conditions (e.g. untreated (Fig. 2A, panel b, lane 1), treated with HA (lane 2), or pretreated with anti-CD44 antibody, followed by HA treatment (lane 3)). We also observed that ERK2 (and to a lesser extent, ERK1) phosphorylation was significantly up-regulated by HA treatment
+
+       a(hyaluronic acid) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9687510
+=========================================================================
+
+_______________________________
+Evidence: MSK1 is activated in vitro by MAPK2/ERK2 or SAPK2/p38. Endogenous MSK1 is activated in 293 cells by either growth factor/phorbol ester stimulation, or by exposure to UV radiation, and oxidative and chemical stress. The activation of MSK1 by growth factors/phorbol esters is prevented by PD 98059, which suppresses activation of the MAPK cascade, while the activation of MSK1 by stress stimuli is prevented by SB 203580, a specific inhibitor of SAPK2/p38. The activated MSK1 translocates to nucleus and activates CREB by phosphorylating at serine 133.
+
+       p(MAPK1) INCREASES p(RPS6KA5,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12686563
+=========================================================================
+
+_______________________________
+Evidence: Re-expression of HSulf-1 in ovarian cancer cell lines resulted in diminished HSPG sulfation, diminished phosphorylation of receptor tyrosine kinases that require sulfated HSPGs as co-receptors for their cognate ligands, and diminished downstream signaling through the extracellular signal-regulated kinase pathway after treatment with fibroblast growth factor-2 or heparin-binding epidermal growth factor.
+
+       cat(p(SULF1)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11096122
+=========================================================================
+
+_______________________________
+Evidence: although all of these effects are far less substantial than those of the accepted activators AMP kinase kinase, phosphoinositide-dependent kinase 1, and CaMKK, respectively (24-26). Finally, Ras-independent activation of the mitogen-activated protein kinases ERK2, p38, and JNK1 was observed in cells transfected with constitutively active CaMKIV and further enhanced by cotransfection with CaMKK (27).
+
+       kin(p(CAMK4)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15923313
+=========================================================================
+
+_______________________________
+Evidence: Cyclic stretch induced rapid and sustained (up to 2 h) increases in phosphorylation of FAK at Tyr(397) and ERK1/2 at Thr(202)/Tyr(204).
+
+       path(cyclic stretch) INCREASES p(MAPK1,pmod(P,T,202))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12783869
+=========================================================================
+
+_______________________________
+Evidence: Jurkat cells upon plating on fibronectin-coated dishes for 1hour and treated with 20 ng/ml SDF-1 for 5 minutes resulted in the activation of MEK1. Also, SDF-1 activation of MEK was comparable in jurkat cells maintained in suspension to those adhered to fibronectin or VCAM.
+
+       p(CXCL12) INCREASES p(MAP2K1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15136221
+=========================================================================
+
+_______________________________
+Evidence: Protein ERK2 was rapidly phosphorylated in endothelial cells exposed to 2 micro gram/mL of G-CSF. G-CSF-induced phosphorylation of ERK2 was found to be a long lasting one, with phosphorylation seen from 30 seconds to 30 minutes.
+
+       p(CSF3) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12686598
+=========================================================================
+
+_______________________________
+Evidence: Oxidative stress induces in endothelial cells a quick and transient coactivation of both stress-activated protein kinase-2/p38 and extracellular signal-regulated kinase (ERK) mitogen-activated protein kinases. We found that inhibiting the ERK pathway resulted, within 5 min of oxidative stress, in a misassembly of focal adhesions characterized by mislocalization of key proteins such as paxillin.
+
+       bp(response to oxidative stress) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12925710
+=========================================================================
+
+_______________________________
+Evidence: Here we demonstrate that activated EphB1 recruits the adaptor proteins Grb2 and p52Shc and promotes p52Shc and c-Src tyrosine phosphorylation as well as MAPK/extracellular signal-regulated kinase (ERK) activation. 
+
+       kin(p(EPHB1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10939590
+=========================================================================
+
+_______________________________
+Evidence: though V12Ras was able to stimulate ERK phosphorylation and induce cyclin D1 expression in the absence of androgen
+
+       p(HRAS) INCREASES p(MAPK1,pmod(P))
+                CellLine: LNCaP cell line
+                Species: 9606
+       p(HRAS) INCREASES p(CCND1)
+                CellLine: LNCaP cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:7873542
+=========================================================================
+
+_______________________________
+Evidence: PhosphoElm data from PMID 15212693
+
+       kin(p(MEK1/2 Family)) DIRECTLY_INCREASES p(MAP2K1,pmod(P,T,25))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17615396
+=========================================================================
+
+_______________________________
+Evidence: Figure 1. Pathways to MUC5AC expression in COPD
+
+       cat(p(IL13RA2)) INCREASES kin(p(MAP2K1))
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10620507
+=========================================================================
+
+_______________________________
+Evidence: Together, the results suggest that 14-3-3 binds both PKC-zeta (at phospho-Ser-186) and Raf-1 in a ternary complex. Phosphorylation of 14-3-3beta by PKC-zeta negatively regulated their physical association. 14-3-3beta with its putative PKC-zeta phosphorylation sites mutated enhanced co-precipitation between PKC-zeta and Raf-1, suggesting that phosphorylation of 14-3-3 by PKC-zeta weakens the complex in vivo. We conclude that 14-3-3 facilitates coupling of PKC-zeta to Raf-1 in an isotype-specific and phosphorylation-dependent manner. We suggest that 14-3-3 is a transient mediator of Raf-1 phosphorylation and activation by PKC-zeta.
+
+       complex(p(PRKCZ),p(RAF1),p(YWHAB)) INCREASES (reifiedEdge: 34696)
+                Species: 9606
+       kin(p(PRKCZ)) DIRECTLY_INCREASES p(RAF1,pmod(P))
+                Species: 9606
+       complex(p(PRKCZ),p(RAF1),p(YWHAQ)) INCREASES (reifiedEdge: 34700)
+                Species: 9606
+_______________________________
+Evidence: protein kinase C-zeta (PKC-zeta) can phosphorylate and activate Raf-1 in a signalling complex
+
+       complex(p(PRKCZ),p(RAF1)) INCREASES (reifiedEdge: 34722)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14645548
+=========================================================================
+
+_______________________________
+Evidence: Analysis of potential substrates for PP1 and PP2A revealed that cav-1-mediated inhibition of PP1 and PP2A leads to increased PDK1, Akt, and ERK1/2 activities.
+
+       phosphatase_activity(p(PPA1)) DECREASES kin(p(MAPK1))
+                Species: 9606
+       phosphatase_activity(p(PPP2R4)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10938285
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(HRAS) INCREASES kin(p(MAP3K4))
+                Species: 9606
+       p(HRAS) INCREASES p(MAP3K4,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11239409
+=========================================================================
+
+_______________________________
+Evidence: Phosphorylation of Shc produces its binding to the adaptor protein Grb2, causing activation of the protooncogene ras, which is also upstream of the MAP kinase pathway.
+
+       complex(p(SHC1),p(GRB2)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11306491
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       cat(p(FAS)) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15289351
+=========================================================================
+
+_______________________________
+Evidence: Advances in differentiation therapy of cancer are likely to depend on improved understanding of molecular events that underlie cell differentiation. We reported recently that cyclin-dependent kinase (Cdk)5 and p35Nck5a (p35) are expressed in human leukemia HL60 cells induced to differentiate to monocytes by an exposure to 1,25-dihydroxyvitamin D(3) (1,25D(3)), form a complex, and this complex has kinase activity (F. Chen and G. P. Studzinski, Blood 2001;97:3763). This laboratory has also provided evidence that the extracellular signal-regulated kinase/mitogen-activated protein kinase pathway is active in the early (24-48 h) stages of HL60 cell differentiation induced by 1,25D(3) but declines in the later, terminal phase of this form of differentiation (X. Wang and G. P. Studzinski, J Cell Biochem 2001;80:471). We examine now the hypothesis that Egr1 protein contributes to the up-regulation of p35 gene transcription and, thus, activated Cdk5/p35 kinase phosphorylates and inactivates mitogen-activated protein/extracellular signal-regulated kinase kinase 1 (MEK1). Our data show that in 1,25D(3)-treated cells, p35 and Egr1 protein levels are elevated in a dose-dependent manner at the onset of the late stage of differentiation. We show also that 1,25D(3) treatment of HL60 cells markedly increases the binding of Egr1 to an element in the p35 gene promoter, whereas transfection of an excess of this Egr1-binding oligonucleotide ( promoter decoy ) reduces p35 gene transcription and cell differentiation. Additionally, Cdk5/p35 phosphorylates MEK1 and inhibits its ability to phosphorylate its downstream target Erk2. These data suggest that in 1,25D(3)-treated HL60 cells, Egr1 up-regulates p35 gene transcription and that Cdk5/p35 kinase inactivates the extracellular signal-regulated kinase/mitogen-activated protein kinase pathway by phosphorylation of MEK1, and this contributes to terminal differentiation of these cells. We examine now the hypothesis that Egr1 protein contributes to the up-regulation of p35 gene transcription and, thus, activated Cdk5/p35 kinase phosphorylates and inactivates mitogen-activated protein/extracellular signal-regulated kinase kinase 1 (MEK1).
+
+       kin(p(CDK5)) DECREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15010462
+=========================================================================
+
+_______________________________
+Evidence:  Our results show that both Gab protein-associated IL-6-induced complex formation and phosphorylation of SHP2-Grb2 are decreased in the presence of inactive Hck. Consequently, Gab-associated activation of downstream signaling molecules ERK and AKT-1 mediating MM cell growth and survival are significantly decreased.
+
+       kin(p(HCK)) INCREASES kin(p(MAPK1))
+                Disease: Multiple Myeloma
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14534538
+=========================================================================
+
+_______________________________
+Evidence: Together, the results show that K/E-FR3 is transforming and that the Ras-ERK and the PI3K-Akt signaling pathways, which are positively regulated by SHP2, are important for K/E-FR3-induced transformation.
+
+       phosphatase_activity(p(PTPN11)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10903731
+=========================================================================
+
+_______________________________
+Evidence: Stimulation by IL-18 strongly enhanced tyrosine phosphorylation of STAT3 and of the mitogen-activated protein kinases (MAPK) p44erk-1and p42erk-2.
+
+       p(IL18) INCREASES kin(p(MAPK1))
+                Cell: natural killer cell
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19103597
+=========================================================================
+
+_______________________________
+Evidence: Interestingly,
+oxidative stress induced the translocation of PP2A-C, an
+ATM inhibitor, into caveolar membranes, away from ATM,
+and promoted the interaction between PP2A-C and caveolin-
+1 (supplemental Fig. 2, A and B, respectively).
+
+       p(RAF1) DIRECTLY_DECREASES kin(p(ATM))
+                CellLine: WI-38 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15150271
+=========================================================================
+
+_______________________________
+Evidence: We found that tuberin expression increases p42/44 MAPK phosphorylation and B-Raf kinase activity. Short interfering RNA down-regulation of tuberin decreased the p42/44 MAPK phosphorylation and B-Raf activity. Expression of Rheb, the target of the GTPase-activating domain of tuberin, inhibited wild-type B-Raf kinase but not activated forms of B-Raf.
+
+       p(TSC2) INCREASES kin(p(MAPK1))
+                Species: 9606
+       cat(p(TSC2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15294900
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       kin(p(TGFBR1)) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15930270
+=========================================================================
+
+_______________________________
+Evidence: Supplementary Figure 3 Cluster of upregulated genes that correlate with INK4A locus [inactivation].
+
+       tscript(p(TP53)) DECREASES gtp_bound_activity(p(HRAS))
+                Cell: Fibroblasts
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14701758
+=========================================================================
+
+_______________________________
+Evidence: GIT1 binding via coiled-coil domains and a Spa2 homology domain is required for sustained activation of MEK1-ERK1/2 after stimulation with angiotensin II and epidermal growth factor.
+
+       complex(p(GIT1),p(MAP2K1)) INCREASES kin(p(MAP2K1))
+                CellLine: 293
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11157721
+=========================================================================
+
+_______________________________
+Evidence: IL3 induced ERK1/2 MAP kinase activation, which peaked after 10 mins of IL3 stimulation.
+
+       p(IL3) INCREASES p(MAPK1)
+                Cell: Myocytes, Smooth Muscle
+                Tissue: vascular tissue
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12843393
+=========================================================================
+
+_______________________________
+Evidence: VEGF activated Raf-1 via Src kinase, leading to phosphorylation of tyrosines 340 and 341 and MEK1-dependent protection from extrinsic-mediated apoptosis.
+
+       kin(p(SRC)) DIRECTLY_INCREASES p(RAF1,pmod(P,Y,340))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11343241
+=========================================================================
+
+_______________________________
+Evidence: These effects were completely prevented by calphostin C, a protein kinase C inhibitor.
+
+       kin(p(PRKC Family)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12600818
+=========================================================================
+
+_______________________________
+Evidence: Inhibition of either Ras or MEKK1 signifi-
+cantly attenuated TNF-–induced AP-1 and NF-B trans-
+activation (Figures 3A–3D).
+
+       p(NRAS) INCREASES (reifiedEdge: 91560)
+                Cell: bronchial epithelial cell
+                RespiratorySystem: Lung
+                Species: 9606
+_______________________________
+Evidence: Expression of N17Ras attenuated activation of ERK (Figure 4A) and JNK (Figure 4B).
+In contrast, selective activation of Ras was sufficient for
+ERK but not JNK activation.
+
+       p(NRAS) INCREASES kin(p(MAPK3))
+                Cell: bronchial epithelial cell
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10085062
+=========================================================================
+
+_______________________________
+Evidence: Activation of
+MEK1 and MEK2 involves phosphorylation upon conserved
+serine residues (Ser-218 and Ser-222 on MEK1, Ser-222 and
+Ser-226 on MEK2
+
+       p(MAP2K1,pmod(P,S,222)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+       p(MAP2K1,pmod(P,S,218)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10559944
+=========================================================================
+
+_______________________________
+Evidence: The PKA-mediated release of MAP kinase from HePTP is sufficient to activate the kinase and to induce transcription from the c-fos promoter.
+
+       phosphatase_activity(p(PTPN7)) DECREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10224087
+=========================================================================
+
+_______________________________
+Evidence: Subsequent kinetic analyses and transfection studies demonstrated that VHR specifically dephosphorylates and inactivates ERK1 and ERK2 in vitro and in vivo.
+
+       phosphatase_activity(p(DUSP3)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15383630
+=========================================================================
+
+_______________________________
+Evidence: Estradiol induced ERK activation was partially blocked (10-20%) by the EGFR antibody.
+
+       p(EGFR) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12628922
+=========================================================================
+
+_______________________________
+Evidence: We further demonstrated that DDR1 activated the MAPK cascade in a Ras-dependent manner. When DDR1 and either a DN mutant form of Ras (N17Ras) or Raf1 (DN-Raf-Flag), a direct downstream effector of Ras, were transiently transfected into 293T cells stimulated with collagen IV, activation levels of ERK were substantially decreased (Figure 4B). These findings demonstrated that DDR1 activates MAPK through Ras and Raf, as has been demonstrated for p53-induced MAPK activation (Lee et al., 2000).
+
+       p(HRAS) INCREASES (reifiedEdge: 92587)
+                CellLine: 293T cell line
+                Species: 9606
+       kin(p(DDR1)) INCREASES kin(p(MAPK1))
+                CellLine: 293T cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9155017
+=========================================================================
+
+_______________________________
+Evidence: mitogen- and sress-mediated MKNK1 activation is blocked by inhibitors of MAP kinase kinase 1 and p38, demonstrating that Mknk1 is downstream of multiple MAP kinases Mknk1 is one of the stress-activated protein kinase cascades and is a candidate to phosphorylate eIF-4E in cells
+
+       p(MAP2K1) INCREASES kin(p(MKNK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11562425
+=========================================================================
+
+_______________________________
+Evidence: Pretreating cells with blocking anti-TNFR1 antibodies, completely abrogates TNF-induced phosphorylation of p38 and p42/44 MAPKs.
+
+       p(TNFRSF1A) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16456544
+=========================================================================
+
+_______________________________
+Evidence: Knockdown of MK2 by siRNA suppressed VEGF-A-induced LIMK1 activation, stress fiber formation, and cell migration. 
+
+       p(MAP2K2) INCREASES kin(p(LIMK1))
+                Tissue: Endothelium
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15067015
+=========================================================================
+
+_______________________________
+Evidence: Cultures of stromal vascular cells containing newly differentiated adipocytes were serum starved for 24 hours and treated with recombinant human IL8 (100ng/ml) for 0-30minutes. Treatment caused ERK1/2 phosphorylation that peaked at 10 minutes and a monoclonal IL8 neutralization antibody attenuated ERK activation. However IL8 neutralization did not attenuate trans-10, cis-12 conjugated linoleic acid mediated activation of ERK.
+
+       p(IL8) INCREASES p(MAPK1,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10329689
+=========================================================================
+
+_______________________________
+Evidence: Pyk2-induced activation of Src is necessary for phosphorylation of Shc and p130Cas and their association with Grb2 and Crk, respectively, and for the activation of ERK and JNK cascades. Expression of a Grb2 mutant with a deletion of the amino-terminal Src homology 3 domain or the carboxyl-terminal tail of Sos strongly reduced Pyk2-induced ERK activation, with no apparent effect on JNK activity.
+
+       p(GRB2) INCREASES kin(p(MAPK1))
+                Species: 9606
+_______________________________
+Evidence: the Grb2/Sos complex connects Pyk2 to the activation of ERK, whereas adaptor proteins p130Cas and Crk link Pyk2 with the JNK pathway.
+
+       complex(p(GRB2),p(SOS1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11809760
+=========================================================================
+
+_______________________________
+Evidence: In addition, pleiotrophin activates both the Ras-MAPK and the PI3K-Akt signaling axes ( 18 ), and both pathways are implicated in glial tumorigenesis
+
+       p(PTN) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11581314
+=========================================================================
+
+_______________________________
+Evidence: In Rac2(-/-) T cells, proliferation was reduced upon stimulation with either plate-bound anti-CD3 or T cell receptor-specific antigen. This defect is accompanied with decreased activation of mitogen activated protein kinase extracellular signal-regulated kinase (ERK)1/2 and p38, and reduced Ca(2)+ mobilization. TCR stimulation-induced actin polymerization is also reduced
+
+       gtp_bound_activity(p(RAC2)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12754209
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       phosphatase_activity(p(DUSP6)) DECREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12689928
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(TNFSF10) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10975709
+=========================================================================
+
+_______________________________
+Evidence: From mutations file
+
+       p(KRAS,sub(G,12,C)) DIRECTLY_INCREASES gtp_bound_activity(p(KRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12923167
+=========================================================================
+
+_______________________________
+Evidence: In fibroblasts, Shp2 undergoes phosphorylation at two C-terminal tyrosyl residues in response to some (fibroblast growth factor and platelet-derived growth factor (PDGF)) but not all (epidermal growth factor and insulin-like growth factor) growth factors.  To clarify the role of Shp2 tyrosyl phosphorylation, we infected Shp2-mutant fibroblasts with retroviruses expressing wild type Shp2 or mutants of either (Y542F or Y580F) or both (Y542F,Y580F) C-terminal tyrosines. Compared with wild type cells, ERK activation was decreased in Y542F- or Y580F-infected cells in response to fibroblast growth factor and PDGF but not the epidermal growth factor. 
+
+       p(PTPN11,pmod(P,Y,580)) INCREASES kin(p(MAPK1))
+                Cell: Fibroblasts
+                Species: 9606
+       p(PTPN11,pmod(P,Y,542)) INCREASES kin(p(MAPK1))
+                Cell: Fibroblasts
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12529413
+=========================================================================
+
+_______________________________
+Evidence: Blockage of MAPK activation by preincubation with PD98059 resulted in the complete abolishment of the HRG capacity to phosphorylate Ser249. However by the invitro studies carried out, it was found that MAPKs activated by the HRG treatment were able to induce the phosphorylation of Progesterone Receptor A and Progesterone Receptor B.
+
+       p(MAPK1) INCREASES p(PGR,pmod(P))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10068651
+=========================================================================
+
+_______________________________
+Evidence: Overexpression of Gab2 enhanced the gp130 or Src-related kinases-mediated ERK2 activation as that of Gab1 did.
+
+       cat(p(IL6ST)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15308637
+=========================================================================
+
+_______________________________
+Evidence: TABLE IV  Selected genes up-regulated by IRF-7
+
+       tscript(p(IRF7)) INCREASES r(RAF1)
+                CellLine: immortalized cell line
+                Cell: b-cell
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12917345
+=========================================================================
+
+_______________________________
+Evidence: HER2/Neu overexpression stimulates the ability of p300 to acetylate ER81, likely by inducing phosphorylation of p300 through the Ras--Raf--mitogen-activated protein kinase pathway.
+
+       kin(p(ERBB2)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11544480
+=========================================================================
+
+_______________________________
+Evidence: platelet-derived growth factor alpha (PDGFA) enhances medulloblastoma migration and increases downstream MAP2K1 (MEK1), MAP2K2 (MEK2), MAPK1 (p42 MAPK) and MAPK3 (p44 MAPK) phosphorylation in a dose-dependent manner
+
+       p(PDGFA) INCREASES p(MAPK1,pmod(P))
+                Disease: medulloblastoma
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12794087
+=========================================================================
+
+_______________________________
+Evidence: % We previously showed that MKP-7 suppresses MAPK activation in COS-7 cells in the order of selectivity, JNK >> p38 > ERK, but interacts with ERK as well as JNK and p38.
+
+       phosphatase_activity(p(DUSP16)) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9001246
+=========================================================================
+
+_______________________________
+Evidence: Protein kinase A-dependent phosphorylation of serine 43 within the regulatory domain of Raf-1 reciprocally potentiates its interaction with Rheb and decreases its interaction with H-Ras.
+
+       p(BRAF,pmod(P,S,43)) DIRECTLY_INCREASES (reifiedEdge: 226718)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14506247
+=========================================================================
+
+_______________________________
+Evidence: ERK1/2 are the Raf effectors for suppression of integrin activation, and PEA-15 reverses suppression by binding ERK1/2.
+
+       p(PEA15) DIRECTLY_DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15070697
+=========================================================================
+
+_______________________________
+Evidence:  We show here that neither BAFF nor APRIL was able to induce STAT3 phosphorylation but did activate ERK1/2 and PI3K/Akt pathways.
+
+       p(TNFSF13) INCREASES kin(p(MAPK1))
+                Disease: Multiple Myeloma
+                Species: 9606
+       p(TNFSF13B) INCREASES kin(p(MAPK1))
+                Disease: Multiple Myeloma
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:15840639
+=========================================================================
+
+_______________________________
+Evidence: Fig. 4. Genes regulated during capillary tube formation. upregulated
+
+       bp(angiogenesis) INCREASES r(MAP2K1)
+                Tissue: Endothelium, Vascular
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14530373
+=========================================================================
+
+_______________________________
+Evidence: inflammatory fluids. Chemerin is secreted as a precursor of low biological activity, which upon proteolytic cleavage of its COOH-terminal domain, is converted into a potent and highly specific agonist of ChemR23, the chemerin receptor. Activation of chemerin receptor results in intracellular calcium release, inhibition of cAMP accumulation, and phosphorylation of p42-p44 MAP kinases, through the Gi class of heterotrimeric G proteins.
+
+       p(RARRES2) INCREASES kin(p(MAPK1))
+                Species: 9606
+       cat(p(CMKLR1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12444546
+=========================================================================
+
+_______________________________
+Evidence: Following platelet-derived growth factor treatment, this receptor induces persistent activation of ectopically expressed PLC epsilon through activation of Ras and Rap1.
+
+       kin(p(PDGFR Family)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11485567
+=========================================================================
+
+_______________________________
+Evidence: we examined
+the requirement for PKCs in the PMA-induced activation of
+ERKs by using different PKC inhibitors. Treatment with
+GF109203X resulted in a total inhibition of ERKs activation,
+whereas rottlerin had no effect (Figure 8). Because rottlerin is
+unable to block the activation of ERKs by PMA, PKC-d is
+not implicated in this process. Given that atypical PKCs were not
+activated by PMA on the XG-6 cells, these results suggest that
+PKC-z was not involved...Finally, because XG-6 cells express
+PKC-nu and PKC-d as novel PKC isoforms, we can assume that
+the novel PKC, namely PCK-nu, is involved in the activation of
+ERKs by PMA.
+
+       kin(p(PRKD3)) INCREASES kin(p(MAPK1))
+                Disease: Multiple Myeloma
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18524994
+=========================================================================
+
+_______________________________
+Evidence: Our cellular and molecular dissection showed that the PDGF-BB/PDGFRbeta kinase axis promoted MM tumor growth and vessel sprouting by activating ERK1/2, AKT, and the transcription of MMEC-released proangiogenic factors, such as vascular endothelial growth factor (VEGF) and interleukin-8 (IL-8)
+
+       p(PDGFB) INCREASES kin(p(MAPK1))
+                Disease: Multiple Myeloma
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9012649
+=========================================================================
+
+_______________________________
+Evidence: OxLDL induced minimum activation of ERK1/2 in monocytes. In contrast, human monocyte-derived macrophages cultured for 7 days exhibited significant MAP kinase activity in response to Cu 2+ oxidized LDL.
+
+       a(Oxidized Low Density Lipoprotein) INCREASES p(MAPK1)
+                Species: 9606
+_______________________________
+Evidence: LDL induced minimum activation of ERK1/2 in monocytes but showed no effect on human monocyte-derived macrophages.
+
+       a(Low Density Lipoprotein) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18212054
+=========================================================================
+
+_______________________________
+Evidence: Microarray profiling uncovers multiple targets of the family, including the cyclin-dependent kinase inhibitor p21/CDKN1A. (See supplemental Table 1: Supplementary Table 1.  miR-106b family signature.  A consensus set of genes that were significantly down-regulated by miR-106a, miR-106b, miR-17-5p, and miR-20)
+
+       micro_rna_abundance(MIR106A) DECREASES r(MAPK1)
+                CellLine: HCT116 cell line
+                Species: 9606
+       micro_rna_abundance(MIR106B) DECREASES r(MAPK1)
+                CellLine: HCT116 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12068000
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       p(IGFBP3) DECREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12545245
+=========================================================================
+
+_______________________________
+Evidence: Expression of a dominant active form (D12) of
+H-Ras enhanced ERK phosphorylation, while dominant negative N17 H-Ras only slightly impaired ERK activation
+but abrogated Akt phosphorylation in response to
+SDF-1?, indicating that its effect is due to inhibition of
+PI3-K.
+
+       p(HRAS) INCREASES (reifiedEdge: 89516)
+                CellLine: Jurkat cell line
+                Cell: T-cell
+                Species: 9606
+       p(HRAS) INCREASES kin(complex(p85/p110 PI3Kinase Complex))
+                CellLine: Jurkat cell line
+                Cell: t-cell
+                Species: 9606
+_______________________________
+Evidence: active H-Ras can
+cause sustained LFA-1 specific adhesion, which was mediated
+by PI3-K and triggered by immobilized or endogenous
+MIP-1? [53].
+
+       p(HRAS) INCREASES cat(p(ITGB2))
+                Cell: T-cell
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12121974
+=========================================================================
+
+_______________________________
+Evidence: over-expression of gamma-synuclein leads to constitutive activation of ERK1/2 and down-regulation of JNK1
+
+       p(SNCG) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12609980
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       cat(p(TLR3)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12096712
+=========================================================================
+
+_______________________________
+Evidence: We thus investigated the effect of OA, an inhibitor of serine/threonine phosphatases PP1 and PP2A, on ERK2 phosphorylation. In conditions of platelet aggregation, a dose-dependent increase in ERK2 activity was observed in the presence of various concentrations of OA (0?200 nM), with activity reaching 534%±144% (P<0.05) at a concentration of 200 nM (Fig. 2A,E). Moreover, using an anti-T183P antibody, we showed that OA increased ERK2 phosphorylation by 400±133% (P<0.05) at OA concentrations of 200 nM (Fig. 2B,E). In contrast, in the presence of RGDS peptide, in conditions in which ?llb?3 was not engaged, no statistically significant variation in ERK2 activity or in levels of the phosphothreonine form of ERK2 (even at 200 nM OA) was observed ( Fig. 2A,B,F). Surprisingly, increasing the concentration of OA decreased the level of phosphorylation of the Y185 residue of ERK2 (halved at 200 nM OA) in the presence or absence of RGDS peptide (Fig. 2C,E,F). 
+
+       p(F2) INCREASES kin(p(MAPK1))
+                Cell: Blood Platelets
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:11673556
+=========================================================================
+
+_______________________________
+Evidence: Culture with CCL2 enhanced phosphorylation of extracellular signal-related kinase 1 (ERK1) and ERK2, but not phosphorylation of p38 or Src.
+
+       cat(p(CCR2)) INCREASES p(MAPK1)
+                Species: 9606
+       p(CCL2) INCREASES kin(p(MAPK1))
+                Species: 9606
+_______________________________
+Evidence: Treatment of fibroblast-like synoviocyte (FLS) cultures with RS-504393, a CCR-2 antagonist significantly inhibited the CCL-2 induced ERK-2 activation, indicating that CCL-2 induced ERK-2 activation was mediated by CCR-2.
+
+       p(CCR2) INCREASES p(MAPK1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:14707129
+=========================================================================
+
+_______________________________
+Evidence: SOCS6 reduced SCF-induced activation of ERK1/2 and p38
+
+       complex(p(KITLG),p(KIT)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10542228
+=========================================================================
+
+_______________________________
+Evidence: DOC-2/DAB2 and DIP1/2 complex represent a negative feedback machinery for several exogenous stimuli-elicited signal cascade. PKC can phosphorylate the N-terminal domain of DOC-2/DAB2 (serine 24) that recruits DIP1/2 to inactivate Ras protein. On the other hand, shortly after the treatment of peptide growth factors, the C terminus of DOC-2/DAB2 (proline-rich domain) competes with SOS for Grb 2 binding, which leads to the inactivation of the MAP pathway. 
+
+       cat(p(SOS Family)) DIRECTLY_INCREASES gtp_bound_activity(p(NRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12138087
+=========================================================================
+
+_______________________________
+Evidence: Here, we investigated the signaling cascade required for Ark inhibition of the GnRH promoter in GT1-7 GnRH neuronal cells. Ark repression was blocked by the MEK/ERK pathway inhibitor, PD98059, and dominant negative MEK1 but was unaffected by dominant negative Ras.
+
+       kin(p(AXL)) INCREASES kin(p(MAP2K1))
+                Species: 9606
+_______________________________
+Evidence: Finally, Ark-mediated repression was significantly attenuated by a dominant negative MEF2C, whereas repression induced by constitutively active Rac was unaffected, indicating that MEF2 proteins are not targets of the Ark -- Rac -- MEK -- ERK cascade.
+
+       gtp_bound_activity(p(RAC Family)) INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12684395
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       kin(complex(p(EGFR),p(ERBB2))) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12546700
+=========================================================================
+
+_______________________________
+Evidence: Not only does p85 suppress p110 activity, but it interferes with the capacity of Ras to activate p110
+
+       p(HRAS) INCREASES p(PIK3C Class IA Family)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12185081
+=========================================================================
+
+_______________________________
+Evidence: The signal by PKC-epsilion to c-myc requires constitutive MEK activity to over ride the transcriptional repression of c-myc in CWR-R1 cells.
+
+       p(MAP2K2) INCREASES p(MYC)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12970367
+=========================================================================
+
+_______________________________
+Evidence: IGF-1 stimulation of MEK, Erk, p90Rsk, and Akt were accordingly augmented.
+
+       p(HSPE1) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:9603925
+=========================================================================
+
+_______________________________
+Evidence: CD43 ligation resulted in enhanced formation of Vav.SLP-76 complexes and in the activation and nuclear translocation of ERK2.
+
+       cat(p(SPN)) INCREASES kin(p(MAPK1))
+                Species: 9606
+       complex(p(LCP2),p(VAV1)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12068308
+=========================================================================
+
+_______________________________
+Evidence: From mutations file
+
+       p(NRAS,sub(Q,61,L)) DIRECTLY_INCREASES gtp_bound_activity(p(NRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12975377
+=========================================================================
+
+_______________________________
+Evidence: hKSR-2 selectively inhibited the Cot-mediated activation of
+MEK by  60%. In contrast, hKSR-2 up-regulated the Rafmediated
+MEK activation by up to 70%.
+
+       kin(p(RAF Family)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+_______________________________
+Evidence: hKSR-2 selectively inhibited the Cot-mediated activation of MEK by  60%. In contrast, hKSR-2 up-regulated the Rafmediated MEK activation by up to 70%.
+
+       kin(p(ARAF)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+       kin(p(BRAF)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+_______________________________
+Evidence: Cot expression has been
+shown to induce ERK and JNK activation
+
+       kin(p(MAP3K8)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:16497971
+=========================================================================
+
+_______________________________
+Evidence: Both mutated N-RAS- and K-RAS-expressing ANBL-6 cells demonstrated a selective up-regulation of cox-2 expression and enhanced secretion of PGE2, a product of cox-2
+
+       p(KRAS,sub(G,12,V)) INCREASES p(PTGS2)
+                CellLine: ANBL-6 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12771938
+=========================================================================
+
+_______________________________
+Evidence: Treatment of melanoma cells with either TRAIL or U0126, a MEK inhibitor could not induce significant reduction in XIAP expression levels, but when the agents were combined there was marked decrease in the percentage of XIAP-positive cells, suggesting that TRAIL-induced XIAP was upregulated by ERK2.
+
+       p(MAPK1) INCREASES p(XIAP)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:18262664
+=========================================================================
+
+_______________________________
+Evidence: Nicotine can also activate
+the MAP kinase pathway and increase levels of Raf-1,
+ERK1/2 and MEK1 in a a7-nAChR-dependent manner
+[16,19,39].
+
+       a(nicotine) INCREASES p(MAP2K1)
+                Disease: Neoplasm
+                RespiratorySystem: Lung
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12072393
+=========================================================================
+
+_______________________________
+Evidence: Modified assertion
+
+       kin(complex(p85/p110 PI3Kinase Complex)) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19052556
+=========================================================================
+
+_______________________________
+Evidence: Stimulation of TLRs leads to activation
+of NF-?B, MAPKs, JuN N-terminal kinases
+(JNKs), p38 and ERKs, and interferon regulatory
+factor (IRF3, IRF5 and IRF7) signalling
+pathways5.
+
+       path(TLR signaling) INCREASES kin(p(MAPK1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10843677
+=========================================================================
+
+_______________________________
+Evidence: jubilant
+
+       p(IL2) INCREASES kin(p(MAPK1))
+                Species: 9606
+       p(MAP2K2) INCREASES p(IL2RA)
+                Species: 9606
+       p(MAP2K1) INCREASES cell_surface_expression(p(CD69))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17157191
+=========================================================================
+
+_______________________________
+Evidence: Additional data received from G. Cortopassi for genes upregulated and downregulated by mtDNA deletions.   Genes were included if they were identified in > 3 out of 4 samples with individual gene p-values <0.1.  20 upregulated genes; 37 downregulated genes.
+
+       path(mitochondrial DNA damage) DECREASES r(MAP2K1)
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10601308
+=========================================================================
+
+_______________________________
+Evidence: Site-directed mutagenesis replaced each of the serine residues within this region with alanine and demonstrated that serine 916 is a major site of in vivo phosphorylation of Ras-GRF1 in both COS-7 cells and NIH-3T3 fibroblasts.
+
+       cat(p(RASGRF1)) INCREASES gtp_bound_activity(p(HRAS))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:19064999
+=========================================================================
+
+_______________________________
+Evidence: Menshikov, M., Torosyan, N., Elizarova, E., Plakida, K., Vorotnikov,
+A., Parfyonova, Y., et al. 2006b. Urokinase induces matrix
+metalloproteinase-9/gelatinase B expression in THP-1 monocytes
+via ERK1/2 and cytosolic phospholipase A2 activation
+and eicosanoid production. J. Vasc. Res. 43: 482–490. doi:10.
+1159/000095248. PMID:16926552.
+
+       p(PLAU) INCREASES kin(p(MAPK1))
+                CellLine: THP-1 cell line
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:10490027
+=========================================================================
+
+_______________________________
+Evidence: Raf-1 phosphorylates and activates MEK-1, a kinase that activates the extracellular signal regulated kinases (ERK)
+
+       p(MAP2K1,pmod(P,S)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+_______________________________
+Evidence: Here we describe a Raf-1-interacting protein, isolated using a yeast two-hybrid screen. This protein inhibits the phosphorylation and activation of MEK by Raf-1 and is designated RKIP (Raf kinase inhibitor protein).
+
+       kin(p(RAF1)) DIRECTLY_INCREASES kin(p(MAP2K1))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:17088251
+=========================================================================
+
+_______________________________
+Evidence: Src or Rac1 inhibition also prevented strain-induced FAK phosphorylation at Tyr(576) and ERK phosphorylation but not FAK phosphorylation at Tyr(397).
+
+       p(RAC1) INCREASES p(MAPK1,pmod(P,Y,204))
+                Species: 9606
+
+=========================================================================
+        Citation: pmid:12565819
+=========================================================================
+
+_______________________________
+Evidence: Par-4 selectively induces apoptosis in androgen-independent prostate cancer cells and Ras-transformed cells but not in androgen-dependent prostate cancer cells or normal cells.
+
+       p(HRAS) INCREASES path(oncogenic transformation)
+                Species: 9606
