@@ -84,56 +84,56 @@ network = {
         "namespaces": {
             "description": "Object keys are integer element ids, values are Namespace objects",
             "type": "object",
-            "additionalProperties": {
+            "items": {
                 "$ref": "#/definitions/Namespace"
             },   
         },
         "baseTerms": {
             "description": "Object keys are integer element ids, values are BaseTerm objects",
             "type": "object",
-            "additionalProperties": {
+            "items": {
                 "$ref": "#/definitions/BaseTerm"
             }   
         },
         "functionTerms": {
             "description": "Object keys are integer element ids, values are FunctionTerm objects",
             "type": "object",
-            "additionalProperties": {
+            "items": {
                 "$ref": "#/definitions/FunctionTerm"
             }
         },
         "reifiedEdgeTerms": {
             "description": "Object keys are integer element ids, values are ReifiedEdgeTerm objects",
             "type": "object",
-            "additionalProperties": {
+            "items": {
                 "$ref": "#/definitions/ReifiedEdgeTerm"
             }
         },
         "nodes": {
             "description": "Object keys are integer element ids, values are Node objects",
             "type": "object",
-            "additionalProperties": {
+            "items": {
                 "$ref": "#/definitions/Node"
             }
         },
         "edges": {
             "description": "Object keys are integer element ids, values are Edge objects",
             "type": "object",
-            "additionalProperties": {
+            "items": {
                 "$ref": "#/definitions/Edge"
             }
         },
         "citations": {
             "description": "Object keys are integer element ids, values are Citation objects",
             "type": "object",
-            "additionalProperties": {
+            "items": {
                 "$ref": "#/definitions/Citation"
             }
         },
         "supports": {
             "description": "Object keys are integer element ids, values are Support objects",
             "type": "object",
-            "additionalProperties": {
+            "items":{
                 "$ref": "#/definitions/Support"
             }
         },
@@ -141,20 +141,14 @@ network = {
             "description": "Items are SimplePropertyValuePair objects describing the appearance and layout of the Network",
             "type": "array",
             "items": {
-                "type": "object",
-                "additionalProperties": {
-                    "$ref": "#/definitions/SimplePropertyValuePair"
-                }
+                "$ref": "#/definitions/SimplePropertyValuePair"
             }
         },
         "properties": {
             "description": "Items are NdexPropertyValuePair objects describing the content of the Network",
             "type": "array",
             "items": {
-                "type": "object",
-                "additionalProperties": {
-                    "$ref": "#/definitions/NdexPropertyValuePair"
-                }              
+                "$ref": "#/definitions/NdexPropertyValuePair"            
             }
         }
     },
@@ -189,19 +183,13 @@ network = {
                 "presentationProperties": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "additionalProperties": {
-                            "$ref": "#/definitions/SimplePropertyValuePair"
-                        }
+                        "$ref": "#/definitions/SimplePropertyValuePair"
                     }
                 },
                 "properties": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "additionalProperties": {
-                            "$ref": "#/definitions/NdexPropertyValuePair"
-                        }               
+                        "$ref": "#/definitions/NdexPropertyValuePair"           
                     }
                 },
                 "citationIds": {
@@ -223,7 +211,6 @@ network = {
             "required": [
                 "type", 
                 "id", 
-                "name", 
                 "citationIds", 
                 "supportIds",
                 "aliases",
@@ -239,7 +226,7 @@ network = {
                     "type": "integer"
                 },
                 "name": {
-                    "type": "string"
+                    "type": ["string", "null"]
                 },
                 "aliases": {
                     "type": "array",
@@ -262,19 +249,13 @@ network = {
                 "presentationProperties": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "additionalProperties": {
-                            "$ref": "#/definitions/SimplePropertyValuePair"
-                        }
+                        "$ref": "#/definitions/SimplePropertyValuePair"
                     }
                 },
                 "properties": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "additionalProperties": {
-                            "$ref": "#/definitions/NdexPropertyValuePair"
-                        }               
+                        "$ref": "#/definitions/NdexPropertyValuePair"             
                     }
                 },
                 "relatedTerms": {
@@ -304,7 +285,7 @@ network = {
                     "type" : "string"
                 },
                 "id" : {
-                    "type" : "Integer"
+                    "type" : "integer"
                 },
                 "prefix" : {
                     "type" : ["string", "null"]
@@ -315,19 +296,13 @@ network = {
                 "presentationProperties": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "additionalProperties": {
-                            "$ref": "#/definitions/SimplePropertyValuePair"
-                        }
+                        "$ref": "#/definitions/SimplePropertyValuePair"
                     }
                 },
                 "properties": {
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "additionalProperties": {
-                            "$ref": "#/definitions/NdexPropertyValuePair"
-                        }               
+                        "$ref": "#/definitions/NdexPropertyValuePair"              
                     }
                 }
             }
@@ -356,6 +331,7 @@ network = {
                 "termType" : {
                     "type" : "string"
                 }
+            }
         },
         "FunctionTerm": {
             "type" : "object",
@@ -385,6 +361,7 @@ network = {
                 "termType" : {
                     "type" : "string"
                 }
+            }
         },
         "ReifiedEdgeTerm": {
             "type" : "object",
@@ -413,41 +390,115 @@ network = {
             "type" : "object",
             "required": [
                 "type", 
-                "id", 
+                "id",
+                "contributors",
                 "properties", 
-                "presentationProperties"
+                "presentationProperties",
+                "identifier",
+                "idType"
                 ],
+            "properties" : {
+                "id" : {
+                    "type" : "integer"
+                },
+                "type" : {
+                    "type" : "string"
+                },
+                "contributors" : {
+                    "type" : "array",
+                    "items" : {
+                        "type" : "string"
+                    }
+                },
+                "title" : {
+                    "type" : ["string", "null"]
+                },
+                "identifier" : {
+                    "type" : "string"
+                },
+                "idType" : {
+                    "type" : "string"
+                },
+                "presentationProperties": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/SimplePropertyValuePair"
+                    }
+                },
+                "properties": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/NdexPropertyValuePair"              
+                    }
+                }
+            }                
         },
         "Support": {
             "type" : "object",
             "required": [
                 "type", 
                 "id", 
-                "properties", 
-                "presentationProperties"
+                "text"
                 ],
+            "properties" : {
+                "id" : {
+                    "type" : "integer"
+                },
+                "type" : {
+                    "type" : "string"
+                },
+                "text" : {
+                    "type" : "string"
+                },
+                "citationId" : {
+                    "type" : ["integer", "null"]
+                }
+            }
         },
         "SimplePropertyValuePair":{
             "type" : "object",
             "required": [
                 "type", 
-                "id", 
-                "properties", 
-                "presentationProperties"
+                "name", 
+                "value"
                 ],
+            "properties" : {
+                "type" : {
+                    "type" : "string"
+                },
+                "name" : {
+                    "type" : "string"
+                },
+                "value" : {
+                    "type" : "string"
+                }
+            }
         },
         "NdexPropertyValuePair":{
             "type" : "object",
             "required": [
-                "type", 
-                "id", 
-                "properties", 
-                "presentationProperties"
+                "type"
                 ],
+            "properties" : {
+                "type" : {
+                    "type" : "string"
+                },
+                "value" : {
+                    "type" : ["string", "null"]
+                },
+                "valueId" : {
+                    "type" : ["integer", "null"]
+                },
+                "dataType" : {
+                    "type" : ["string", "null"]
+                },
+                "predicateString" : {
+                    "type" : ["string", "null"]
+                },
+                "predicateId" : {
+                    "type" : ["integer", "null"]
+                }
+            }
         }
     }
 }
-
-
-
-
