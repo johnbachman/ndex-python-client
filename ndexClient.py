@@ -3,7 +3,8 @@
 import requests
 import pandas as pd
 import json
-
+from jsonschema import validate
+import ndexSchema as schema
 
         
 # Utility to strip UUID from property graph before writing, ensure that we create new network
@@ -219,3 +220,8 @@ class Ndex:
 # Request methods
 
 # Task methods
+
+# Validation
+
+    def validateNetwork(self, network):
+        return validate(network, schema.network)

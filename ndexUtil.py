@@ -74,7 +74,7 @@ class NetworkWrapper:
             self.nodeLabelMap[int(nodeId)] = self.getNodeLabel(node)
 
         for edge in ndexNetwork['edges'].values():
-            for supportId in edge['supports']:
+            for supportId in edge['supportIds']:
                 supports = ndexNetwork['supports']
                 support = supports[str(supportId)]
                 if supportId in self.supportToEdgeMap:
@@ -86,7 +86,7 @@ class NetworkWrapper:
 
         for supportId in self.supportToEdgeMap.keys():
             support = ndexNetwork['supports'][str(supportId)]
-            citationId = support['citation']
+            citationId = support['citationId']
             if citationId in self.citationToSupportMap:
                 supportIdList = self.citationToSupportMap[citationId]
             else:
@@ -160,7 +160,7 @@ class NetworkWrapper:
                 functionLabel = self.getTermLabel(functionTermId)
                 functionLabel = getFunctionAbbreviation(functionLabel)
                 parameterLabels = []
-                for parameterId in term['parameters']:
+                for parameterId in term['parameterIds']:
                     parameterLabel = self.getTermLabel(parameterId)
                     parameterLabels.append(parameterLabel)
                 label = "%s(%s)" % (functionLabel, ",".join(parameterLabels))
