@@ -9,7 +9,7 @@ network = {
     "$schema": "http://www.ndexbio.org/api/schema/1.0.0/Network",
     "description": "Schema for Network objects used in NDEx REST API",
     "type": "object",
-        "required": [
+    "required": [
         "type", 
         "edges", 
         "nodes", 
@@ -160,32 +160,40 @@ network = {
     },
     "definitions": {
         "Edge": {
+            "type": "object",
+            "required": [
+                "type", 
+                "id", 
+                "citationIds", 
+                "supportIds",
+                "subjectId",
+                "properties", 
+                "presentationProperties"
+                ],
             "properties": {
-                "citationIds": {
-                    "type": "array",
-                    "items": {
-                        "type": "number"
-                    }
+                "type": {
+                    "type": "string"
                 },
                 "id": {
-                    "type": "number"
+                    "type": "integer"
                 },
-                "objectId": {
-                    "type": "number"
+                "subjectId": {
+                    "type": "integer"
                 },
                 "predicateId": {
-                    "type": "number"
+                    "type": ["integer", "null"]
+                },
+                "objectId": {
+                    "type": ["integer", "null"]
                 },
                 "presentationProperties": {
-                    "type": "object",
+                    "type": "array",
                     "items": {
-                    
+                        "type": "object",
                         "additionalProperties": {
                             "$ref": "#/definitions/SimplePropertyValuePair"
                         }
-                        
-                    },
-                    "type": "array"
+                    }
                 },
                 "properties": {
                     "type": "array",
@@ -193,85 +201,249 @@ network = {
                         "type": "object",
                         "additionalProperties": {
                             "$ref": "#/definitions/NdexPropertyValuePair"
-                        } 
-                    }                    
+                        }               
+                    }
                 },
-                "subjectId": {
-                    "type": "number"
-                },
-                "supports": {
+                "citationIds": {
+                    "type": "array",
                     "items": {
-                        "type": "number"
-                    },
-                    "type": "array"
+                        "type": "integer"
+                    }
                 },
-                "type": {
-                    "type": "string"
+                "supportIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
                 }
-            },
-            "type": "object"
+            }   
         },
         "Node": {
+            "type": "object",
+            "required": [
+                "type", 
+                "id", 
+                "name", 
+                "citationIds", 
+                "supportIds",
+                "aliases",
+                "relatedTerms",
+                "properties", 
+                "presentationProperties"
+                ],
             "properties": {
-                "aliases": {
-                    "items": {
-                        "type": "number"
-                    },
-                    "type": "array"
-                },
-                "citations": {
-                    "items": {
-                        "type": "number"
-                    },
-                    "type": "array"
+                "type": {
+                    "type": "string"
                 },
                 "id": {
-                    "type": "number"
+                    "type": "integer"
                 },
                 "name": {
                     "type": "string"
                 },
-                "presentationProperties": {
+                "aliases": {
+                    "type": "array",
                     "items": {
-                        "additionalProperties": {
-                            "$ref": "#/definitions/SimplePropertyValuePair"
-                        },
-                        "type": "object"
-                    },
-                    "type": "array"
+                        "type": "integer"
+                    }       
                 },
-                "properties": {
+                "citationIds": {
+                    "type": "array",
                     "items": {
-                        "additionalProperties": {
-                            "$ref": "#/definitions/NdexPropertyValuePair"
-                        },
-                        "type": "object"
-                    },
-                    "type": "array"
-                },
-                "relatedTerms": {
-                    "items": {
-                        "type": "number"
-                    },
-                    "type": "array"
-                },
-                "represents": {
-                    "type": "number"
-                },
-                "representsTermType": {
-                    "type": "string"
+                        "type": "integer"
+                    }
                 },
                 "supportIds": {
+                    "type": "array",
                     "items": {
-                        "type": "number"
-                    },
-                    "type": "array"
+                        "type": "integer"
+                    }
                 },
-                "type": {
-                    "type": "string"
+                "presentationProperties": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "#/definitions/SimplePropertyValuePair"
+                        }
+                    }
+                },
+                "properties": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "#/definitions/NdexPropertyValuePair"
+                        }               
+                    }
+                },
+                "relatedTerms": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "represents": {
+                    "type": ["integer", "null"]
+                },
+                "representsTermType": {
+                    "type": ["string", "null"]
                 }
-            },
-            "type": "object"
+            }          
+        },
+        "Namespace": {
+            "type" : "object",
+            "required": [
+                "type", 
+                "id", 
+                "properties", 
+                "presentationProperties"
+                ],
+            "properties" : {
+                "type" : {
+                    "type" : "string"
+                },
+                "id" : {
+                    "type" : "Integer"
+                },
+                "prefix" : {
+                    "type" : ["string", "null"]
+                },
+                "uri" : {
+                    "type" : ["string", "null"]
+                },
+                "presentationProperties": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "#/definitions/SimplePropertyValuePair"
+                        }
+                    }
+                },
+                "properties": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "$ref": "#/definitions/NdexPropertyValuePair"
+                        }               
+                    }
+                }
+            }
+        },
+        "BaseTerm": {
+            "type" : "object",
+            "required": [
+                "type", 
+                "id",
+                "name",
+                "termType"
+                ],
+            "properties" : {
+                "id" : {
+                    "type" : "integer"
+                },
+                "type" : {
+                    "type" : "string"
+                },
+                "name" : {
+                    "type" : "string"
+                },
+                "namespaceId" : {
+                    "type" : ["integer", "null"]
+                },
+                "termType" : {
+                    "type" : "string"
+                }
+        },
+        "FunctionTerm": {
+            "type" : "object",
+            "required": [
+                "type", 
+                "id", 
+                "termType", 
+                "functionTermId",
+                "parameterIds"
+                ],
+            "properties" : {
+                "id" : {
+                    "type" : "integer"
+                },
+                "type" : {
+                    "type" : "string"
+                },
+                "parameterIds" : {
+                    "type" : "array",
+                    "items" : {
+                        "type" : "integer"
+                    }
+                },
+                "functionTermId" : {
+                    "type" : "integer"
+                },
+                "termType" : {
+                    "type" : "string"
+                }
+        },
+        "ReifiedEdgeTerm": {
+            "type" : "object",
+            "required": [
+                "type", 
+                "id", 
+                "termType", 
+                "presentationProperties"
+                ],
+            "properties" : {
+                "id" : {
+                    "type" : "integer"
+                },
+                "type" : {
+                    "type" : "string"
+                },
+                "termType" : {
+                    "type" : "string"
+                },
+                "edgeId" : {
+                    "type" : "integer"
+                }
+            }
+        },
+        "Citation": {
+            "type" : "object",
+            "required": [
+                "type", 
+                "id", 
+                "properties", 
+                "presentationProperties"
+                ],
+        },
+        "Support": {
+            "type" : "object",
+            "required": [
+                "type", 
+                "id", 
+                "properties", 
+                "presentationProperties"
+                ],
+        },
+        "SimplePropertyValuePair":{
+            "type" : "object",
+            "required": [
+                "type", 
+                "id", 
+                "properties", 
+                "presentationProperties"
+                ],
+        },
+        "NdexPropertyValuePair":{
+            "type" : "object",
+            "required": [
+                "type", 
+                "id", 
+                "properties", 
+                "presentationProperties"
+                ],
         }
     }
 }
