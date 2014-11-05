@@ -4,21 +4,21 @@ import requests
 import pandas as pd
 import json
 from jsonschema import validate
-import ndexSchema as schema
+import ndex_schema as schema
 
         
 # Utility to strip UUID from property graph before writing, ensure that we create new network
-def removeUUIDFromNetwork(ndexPropertyGraphNetwork):   
+def remove_uuid_from_network(ndex_property_graph_network):
     counter = 0
-    for pv in ndexPropertyGraphNetwork.properties:
+    for pv in ndex_property_graph_network.properties:
         if pv.predicateString == "UUID":
-            del ndexPropertyGraphNetwork.properties[counter]
+            del ndex_property_graph_network.properties[counter]
             return None
         else:
             counter = counter + 1
    
 # Each ndex property becomes a dict property
-def addNdexPropertiesToDict(properties, target):
+def add_ndex_properties_to_dict(properties, target):
      for pv in properties:
          predicate = pv['predicateString']  
          #dataType = pv['dataType']
@@ -27,14 +27,14 @@ def addNdexPropertiesToDict(properties, target):
          target[predicate] = value
   
 class PDGraph:
-    def __init__(self, ndexPropertyGraphNetwork):
+    def __init__(self, ndex_property_graph_network):
         # assemble a dictionary of nodes and then create the dataframe 
         node_rows = []
         node_indexes = []
-        for index, node in ndexPropertyGraphNetwork['nodes'].iteritems():
+        for index, node in ndex_property_graph_network['nodes'].iteritems():
             node_dict = {}
             # PropertyGraphNodes just have properties
-            addNdexPropertiesToDict(node['properties'], node_dict)
+            add_ndex_properties_to_dict(node['properties'], node_dict)
             node_rows.append(node_dict)
             node_indexes.append(index)
             
@@ -46,14 +46,14 @@ class PDGraph:
         # then create the dataframe
         edge_rows = []
         edge_indexes = []
-        for index, edge in ndexPropertyGraphNetwork['edges'].iteritems():
+        for index, edge in ndex_property_graph_network['edges'].iteritems():
             edge_dict = {}
             # PropertyGraphEdges have special fields describing the 
             # edge itself, in addition to properties of the edge
             edge_dict['ndex:subjectId'] = edge['subjectId']
             edge_dict['ndex:predicate'] = edge['predicate']
             edge_dict['ndex:objectId'] = edge['objectId']
-            addNdexPropertiesToDict(edge['properties'], edge_dict)
+            add_ndex_properties_to_dict(edge['properties'], edge_dict)
             edge_rows.append(edge_dict)
             edge_indexes.append(index)
             
@@ -61,7 +61,7 @@ class PDGraph:
         
         # assemble a dictionary of the network properties
         property_dict = {}
-        addNdexPropertiesToDict(ndexPropertyGraphNetwork['properties'], property_dict)
+        add_ndex_properties_to_dict(ndex_property_graph_network['properties'], property_dict)
         self.properties = pd.Series(property_dict)
         
         ## TBD export a PDGraph to an NDEx PropertyGraphNetwork dict structure
@@ -81,28 +81,28 @@ class Ndex:
     
 # Base methods for making requests to this NDEx
     
-    def put(self, route, putJson):
+    def put(self, route, put_json):
         url = self.host + route  
         print "PUT route: " + url
-        print putJson
+        print put_json
         headers = {'Content-Type' : 'application/json;charset=UTF-8',
                    'Accept' : 'application/json',
                    'Cache-Control' : 'no-cache',
                    }
-        response = self.s.put(url, data = putJson, headers = headers)
+        response = self.s.put(url, data = put_json, headers = headers)
         response.raise_for_status()
         return response.json()
         
-    def post(self, route, postJson):
+    def post(self, route, post_json):
         url = self.host + route
         print "POST route: " + url
-        print postJson
+        print post_json
         
         headers = {'Content-Type': 'application/json',
                    'Accept': 'application/json',
                    'Cache-Control': 'no-cache',
                    }
-        response = self.s.post(url, data=postJson, headers=headers)
+        response = self.s.post(url, data=post_json, headers=headers)
         response.raise_for_status()
         return response.json()
         
@@ -112,11 +112,11 @@ class Ndex:
         response.raise_for_status()
         return response.json()
     
-    def get(self, route, getParams = None):
+    def get(self, route, get_params = None):
         url = self.host + route
         print "GET route: " + url
-        print getParams
-        response = self.s.get(url, params = getParams)
+        print get_params
+        response = self.s.get(url, params = get_params)
         response.raise_for_status()
         return response.json()
         
@@ -125,92 +125,92 @@ class Ndex:
 
 # Search for networks by keywords
 #    network    POST    /network/search/{skipBlocks}/{blockSize}    SimpleNetworkQuery    NetworkSummary[]
-    def findNetworks(self, searchString="", accountName=None, skipBlocks=0, blockSize=100): 
-        route = "/network/search/%s/%s" % (skipBlocks, blockSize)
-        postData = {"searchString" : searchString}
-        if accountName:
-            postData["accountName"] = accountName
-        postJson = json.dumps(postData)
-        return self.post(route, postJson)
+    def find_networks(self, search_string="", account_name=None, skip_blocks=0, block_size=100):
+        route = "/network/search/%s/%s" % (skip_blocks, block_size)
+        post_data = {"searchString" : search_string}
+        if account_name:
+            post_data["accountName"] = account_name
+        post_json = json.dumps(post_data)
+        return self.post(route, post_json)
         
-    def findNetworksAsDataFrame(self, searchString="", accountName=None, skipBlocks=0, blockSize=100): 
-        return pd.DataFrame(self.findNetworks(searchString, accountName, skipBlocks, blockSize))
+    def find_networks_as_data_frame(self, search_string="", account_name=None, skip_blocks=0, block_size=100):
+        return pd.DataFrame(self.find_networks(search_string, account_name, skip_blocks, block_size))
 
-    def getNetworkApi(self, asType="DataFrame"):
+    def get_network_api(self, as_type="DataFrame"):
         route = "/network/api"
-        decodedJson = self.get(route)
-        if asType == "DataFrame":
-            return pd.DataFrame(decodedJson)
+        decoded_json = self.get(route)
+        if as_type == "DataFrame":
+            return pd.DataFrame(decoded_json)
         else:
-            return decodedJson
+            return decoded_json
  
 #    network    POST    /network/{networkUUID}/edge/asNetwork/{skipBlocks}/{blockSize}        Network
-    def getNetworkByEdges(self, networkId, skipBlocks=0, blockSize=100):
-        route = "/network/%s/edge/asNetwork/%s/%s" % (networkId, skipBlocks, blockSize)
+    def get_network_by_edges(self, network_id, skip_blocks=0, block_size=100):
+        route = "/network/%s/edge/asNetwork/%s/%s" % (network_id, skip_blocks, block_size)
         return self.get(route)
 
 #    network    GET    /network/{networkUUID}/asNetwork       Network
-    def getCompleteNetwork(self, networkId):
-        route = "/network/%s/asNetwork" % (networkId)
+    def get_complete_network(self, network_id):
+        route = "/network/%s/asNetwork" % (network_id)
         return self.get(route)
 
 #    network    GET    /network/{networkUUID}       NetworkSummary
-    def getNetworkSummary(self, networkId):
-        route = "/network/%s" % (networkId)
+    def get_network_summary(self, network_id):
+        route = "/network/%s" % (network_id)
         return self.get(route)
         
 #    network    POST    /network    Network    NetworkSummary
-    def saveNewNetwork(self, Network):
+    def save_new_network(self, network):
         route = "/network/asNetwork"
-        return self.post(route, Network)
+        return self.post(route, network)
 
 #    network    POST    /network/asNetwork/group/{group UUID}    Network    NetworkSummary
-    def saveNewNetworkForGroup(self, Network, groupId):
-        route = "/network/asNetwork/group/%s" % (groupId)
-        self.removeUUIDFromNetwork(Network)
-        return self.post(route, Network)
+    def save_new_network_for_group(self, network, group_id):
+        route = "/network/asNetwork/group/%s" % (group_id)
+        self.removeUUIDFromNetwork(network)
+        return self.post(route, network)
        
 ##  Neighborhood PathQuery
 #    network    POST    /network/{networkUUID}/asPropertyGraph/query    SimplePathQuery    PropertyGraphNetwork    
-    def getNeighborhood(self, networkId, searchString, searchDepth=1):
-        route = "/network/%s/asNetwork/query" % (networkId) 
-        postData = {'searchString': searchString,
-                   'searchDepth': searchDepth}
-        postJson = json.dumps(postData)
-        return self.post(route, postJson)
+    def get_neighborhood(self, network_id, search_string, search_depth=1):
+        route = "/network/%s/asNetwork/query" % (network_id)
+        post_data = {'searchString': search_string,
+                   'searchDepth': search_depth}
+        post_json = json.dumps(post_data)
+        return self.post(route, post_json)
         
 # PropertyGraphNetwork methods
         
 #    network    POST    /network/{networkUUID}/edge/asPropertyGraph/{skipBlocks}/{blockSize}        PropertyGraphNetwork
-    def getPropertyGraphNetworkByEdges(self, networkId, skipBlocks=0, blockSize=100):
-        route = "/network/%s/edge/asPropertyGraph/%s/%s" % (networkId, skipBlocks, blockSize)
+    def get_property_graph_network_by_edges(self, network_id, skip_blocks=0, block_size=100):
+        route = "/network/%s/edge/asPropertyGraph/%s/%s" % (network_id, skip_blocks, block_size)
         return self.get(route)
 
 #    network    GET    /network/{networkUUID}/asPropertyGraph        PropertyGraphNetwork
-    def getCompletePropertyGraphNetwork(self, networkId):
-        route = "/network/%s/asPropertyGraph" % (networkId)
+    def get_complete_property_graph_network(self, network_id):
+        route = "/network/%s/asPropertyGraph" % (network_id)
         return self.get(route)
 
 #    network    POST    /network/asPropertyGraph    PropertyGraphNetwork    NetworkSummary
-    def saveNewPropertyGraphNetwork(self, propertyGraphNetwork):
+    def save_new_property_graph_network(self, property_graph_network):
         route = "/network/asPropertyGraph"
-        self.removeUUIDFromNetwork(propertyGraphNetwork)
-        return self.post(route, propertyGraphNetwork)
+        self.removeUUIDFromNetwork(property_graph_network)
+        return self.post(route, property_graph_network)
 
 #    network    POST    /network/asPropertyGraph/group/{group UUID}    PropertyGraphNetwork    NetworkSummary
-    def saveNewPropertyGraphNetworkForGroup(self, propertyGraphNetwork, groupId):
-        route = "/network/asPropertyGraph/group/%s" % (groupId)
-        self.removeUUIDFromNetwork(propertyGraphNetwork)
-        return self.post(route, propertyGraphNetwork)
+    def save_new_property_graph_network_for_group(self, property_graph_network, group_id):
+        route = "/network/asPropertyGraph/group/%s" % (group_id)
+        self.removeUUIDFromNetwork(property_graph_network)
+        return self.post(route, property_graph_network)
        
 ##  Neighborhood PathQuery
 #    network    POST    /network/{networkUUID}/asPropertyGraph/query    SimplePathQuery    PropertyGraphNetwork    
-    def getNeighborhoodAsPropertyGraph(self, networkId, searchString, searchDepth=1):
-        route = "/network/%s/asPropertyGraph/query" % (networkId) 
-        postData = {'searchString': searchString,
-                   'searchDepth': searchDepth}
-        postJson = json.dumps(postData)
-        return self.post(route, postJson)
+    def get_neighborhood_as_property_graph(self, network_id, search_string, search_depth=1):
+        route = "/network/%s/asPropertyGraph/query" % (network_id)
+        post_data = {'searchString': search_string,
+                   'searchDepth': search_depth}
+        post_json = json.dumps(post_data)
+        return self.post(route, post_json)
 
         
 # User methods
@@ -223,5 +223,5 @@ class Ndex:
 
 # Validation
 
-    def validateNetwork(self, network):
+    def validate_network(self, network):
         return validate(network, schema.network)
