@@ -8,7 +8,7 @@ import sys
 import networkx as nx
 
 # Convert NDEx property graph json to a trivial networkx network
-def ndex_property_graph_neetwork_to_network_x(ndex_property_graph_network):
+def ndex_property_graph_network_to_network_x(ndex_property_graph_network):
         g = nx.MultiDiGraph()
         for node in ndex_property_graph_network['nodes'].values():
             g.add_node(node['id'])
